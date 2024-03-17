@@ -1,0 +1,9 @@
+*
+!*/
+!config/**
+!texturepacks/**
+!shaderpacks/**
+!mods/**
+!local/**
+!kubejs/**
+!.gitignore
