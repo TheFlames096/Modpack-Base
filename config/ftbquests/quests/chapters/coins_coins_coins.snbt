@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "coins_coins_coins"
+	group: "780D6481FD0ACCE5"
+	id: "5D9609483F21D2D2"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Coins, Coins, Coins"
+}

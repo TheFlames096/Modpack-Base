@@ -1,0 +1,27 @@
+[
+  {
+    "id": "#iguanatweaksexpanded:copper_ores",
+    "min": 0.0,
+    "max": 2.0
+  },
+  {
+    "id": "#iguanatweaksexpanded:iron_ores",
+    "min": 1.0,
+    "max": 2.0
+  },
+  {
+    "id": "#iguanatweaksexpanded:gold_ores",
+    "min": 2.0,
+    "max": 3.0
+  },
+  {
+    "id": "minecraft:sculk_catalyst",
+    "min": 40.0,
+    "max": 40.0
+  },
+  {
+    "id": "minecraft:spawner",
+    "min": 40.0,
+    "max": 40.0
+  }
+]

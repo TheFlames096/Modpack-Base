@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "kill_all_the_things"
+	group: "780D6481FD0ACCE5"
+	id: "7F5E79CA31CD9FC6"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Kill All the Things"
+}

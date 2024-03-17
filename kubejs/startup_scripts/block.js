@@ -1,0 +1,12 @@
+StartupEvents.registry("block",event => {
+    event.create("obsidian_glass")
+    .hardness(2)
+    .glassSoundType()
+    .resistance(30)
+    .notSolid()
+    .transparent(true)
+    .defaultTranslucent()
+    .requiresTool(true)
+    .tagBlock("mineable/pickaxe")
+    .tagBlock("forge:glass")
+})

@@ -1,0 +1,10 @@
+{
+	id: "610912C38E26F95B"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ item: "farmersdelight:chocolate_pie" }
+		{ count: 4, item: "delightful:salmonberry_pie_slice" }
+	]
+	title: "Snack Choice"
+}

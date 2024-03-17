@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tier_9__uhv"
+	group: "7DACA16D0CF75277"
+	id: "468C31362F8B4EFF"
+	order_index: 10
+	quest_links: [ ]
+	quests: [ ]
+	title: "Tier 9 - UHV"
+}

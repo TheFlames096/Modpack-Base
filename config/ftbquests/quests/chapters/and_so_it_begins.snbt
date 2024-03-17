@@ -1,0 +1,1147 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "and_so_it_begins"
+	group: ""
+	icon: "minecraft:red_bed"
+	id: "22DE219B874D14A5"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Your first task is to find food and shelter for the night. The nights in this pack are cruel because of hardcore darkness. But you will have a bed by the end of this questtab."
+				""
+				"lYou don't need to keep this book. Use the Tilde (~) button to open quests without the bookr ...unless you changed your keybinds."
+				""
+				"If you need some extra help or just want to hang out, feel free to visit our Discord server at &1&nhttps://discord.gg/gtnh&r. And yes, the links are clickable! On the discord, select your tech tier in #role-select - it will help people to tailor their advice to your situation."
+				""
+				"Many GTNH topics are explained in our Wiki at &1&nhttps://wiki.gtnewhorizons.com/wiki/Main_Page&r. It does not have the same extent and structure as the Questbook, but some things are much better with pictures and tables! The wiki also has tips on extra topics like what additional mods are confirmed to work with the pack, how GTNH can be installed for modern Java or how to set up a server."
+				""
+				"Additionally, there is a spreadsheet at &1&nhttps://bit.ly/gtnh-datasheets&r for the info you would want a spreadsheet for."
+				""
+				"If you play through a launcher that relies on &4CurseForge&r, be aware that it doesn't always work properly. It doesn't play well with all the custom versions of mods that this pack has. So if you have any problems, first switch to another launcher like MultiMC, Prism, or Technic. The wiki has instructions there as well. The latest version of the pack is available on the Discord channel from #announcements or with the !download command."
+				""
+				"Hopefully you didn't get munched by a monster while reading this."
+			]
+			icon: "minecraft:wheat"
+			id: "0CF4D76987B3E1E4"
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "630ADD880D4C821A"
+				item: "minecraft:dirt"
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "&1Your First Night"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CF4D76987B3E1E4"]
+			dependency_requirement: "all_started"
+			description: [
+				"This book has a built-in reading light, lucky you! You can read about quests while you're waiting for the night to be over, but for now, you may want to get the basics done. If it isn't dark already, go out and collect some gravel and wood. "
+				""
+				"Keep in mind that you need food, so look for something to eat."
+				""
+				"Make sure to read the info-quests linked to the first quest, they have important info!"
+			]
+			hide: true
+			icon: "minecraft:gravel"
+			id: "18FD41A81DB9D74D"
+			rewards: [
+				{
+					id: "3DEA8D350907C47F"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "32C3698118B7F1ED"
+					item: "kubejs:coin_survivor_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 5L
+					id: "7FFB4AA1238D5AB1"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Any #minecraft:logs"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "48688A0EC15A9E50"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "7FE52C365C888878"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Any #minecraft:logs"
+					type: "item"
+				}
+			]
+			title: "&1Sticks 'n Stones"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18FD41A81DB9D74D"]
+			description: [
+				"As you might have noticed when collecting gravel, no Flint dropped for you. "
+				""
+				"Well, there is a... recipe for that. Look up Flint in Just Enough Items (JEI) and craft some!"
+				""
+				"The search field of JEI is at the bottom of the screen when you open your inventory. The results are on the right side."
+			]
+			hide: true
+			id: "43A20B653756F502"
+			rewards: [{
+				id: "0597234F5FCE4701"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "389012B0A33F00C6"
+				item: { Count: 3b, id: "minecraft:flint" }
+				type: "item"
+			}]
+			title: "&1Where's the Flint?"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["43A20B653756F502"]
+			description: ["It's time to get yourself a 3x3 crafting area. Use your flint and some wood to build one!"]
+			id: "6983A9146AF214EB"
+			rewards: [
+				{
+					count: 2
+					id: "427B1E0CB9D47B92"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "3C446080F71404B2"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "0DFC58EF15D4F9A0"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "&1Crafting Time"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6983A9146AF214EB"]
+			description: [
+				"Now that you've made it this far,  you might notice how the two new quests look different. "
+				""
+				"The quest with the jagged edges is a main quest - it is linked to other main quests by a thick line. You must complete main quests to unlock the next tier and to progress in general. If you can't progress, go back to previous tiers and look for uncompleted main quests."
+				""
+				"The other quest is an optional quest, and is not needed to unlock new tiers. However, optional quests often introduce you to useful items or processes."
+				""
+				"What are the coins for? You can use them to purchase things in the \"Coins, Coins, Coins\" questbook tab - you have to scroll to the bottom once it unlocks!"
+				""
+				"In case you started in a bad biome, here's enough coins to purchase some saplings."
+			]
+			icon: "ftbquests:book"
+			id: "545AFFFAACB42B2A"
+			rewards: [
+				{
+					id: "1A7198EDE69BD8F0"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "0B2B3C083AB97A44"
+					item: "kubejs:coin_nature_1"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0BAD7DFF0981A714"
+				title: "&1Main Quests and Secondary Quests"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["545AFFFAACB42B2A"]
+			description: [
+				"Now that you've got a shelter and a crafting table, you should make some tools, unless you'd like to continue punching trees with your bare hands."
+				""
+				"You should probably make the shovel first so you can get gravel for the rest more easily."
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:flint_pickaxe"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 63
+						ToolSpeed: 5.5f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "6C40BF72B572A2DD"
+			rewards: [
+				{
+					count: 10
+					id: "5DEC715255F8285C"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "578F4C2F69AC7839"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+				{
+					id: "3746203911DB91C6"
+					item: "minecraft:cookie"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [
+				{
+					id: "642B613AD9F3E5B3"
+					item: {
+						Count: 1b
+						id: "gtceu:flint_pickaxe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 5.5f
+							}
+							HideFlags: 2
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "3F60B1DBEA0FEB0D"
+					item: {
+						Count: 1b
+						id: "gtceu:flint_shovel"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 5.5f
+							}
+							HideFlags: 2
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2500047D2CE253DB"
+					item: {
+						Count: 1b
+						id: "gtceu:flint_axe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 3.5f
+							}
+							HideFlags: 2
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "75CC42DC72F95ED4"
+					item: {
+						Count: 1b
+						id: "gtceu:flint_hoe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								MaxDamage: 63
+							}
+							HideFlags: 2
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&1Tools"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C40BF72B572A2DD"]
+			description: [
+				"It's about time to craft something more useful: A sword!"
+				""
+				"Now that you have a sword, you will get credit for monster kills in the Kill All the Things tab. Watch out, monsters in this world will chew you up and spit you out!"
+				""
+				"You can find additional weapon quests on the Getting Around tab."
+			]
+			id: "714790D3C5018D59"
+			rewards: [
+				{
+					count: 5
+					id: "1150E115082585B6"
+					item: "kubejs:coin_smith_1"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "74FD5FA9B4D0CA19"
+					item: "kubejs:coin_survivor_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "2CD4FBBE291F37D1"
+				item: {
+					Count: 1b
+					id: "gtceu:flint_sword"
+					tag: {
+						DisallowContainerItem: 0b
+						Enchantments: [{
+							id: "minecraft:fire_aspect"
+							lvl: 2s
+						}]
+						GT.Behaviours: { }
+						GT.Tool: {
+							AttackDamage: 4.0f
+							AttackSpeed: -2.4f
+							Damage: 0
+							MaxDamage: 63
+						}
+						HideFlags: 2
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&1Sharpness: Over... 5..."
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6C40BF72B572A2DD"]
+			description: [
+				"Look at you, with your shiny flint pickaxe! "
+				""
+				"Time to mine some cobblestone. Yay! You can even improve your dirt hut!"
+			]
+			id: "00D9C810EB9BE05D"
+			rewards: [
+				{
+					id: "6ADAC980254D848F"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "3610DEB18B6ACE9B"
+					item: "kubejs:coin_exploration_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				count: 64L
+				id: "6C36F9939B72A32A"
+				item: { Count: 64b, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			title: "&1Get That Stone"
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["00D9C810EB9BE05D"]
+			description: ["Time to burn some stuff, isn't it? You can't make charcoal in it, but you sure will find some usage for it soon™."]
+			id: "72F1F577A8F3D9AA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "415E6B72C9B4C424"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "0DC4A0C38434B67C"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "76A6538C18C08933"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "&1Fire, Fire, Grandpa!"
+			x: 14.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6C40BF72B572A2DD"]
+			description: [
+				"Jumping all the time is exhausting and makes you really hungry. "
+				"To reduce your food depletion, you might want to use stairs instead."
+			]
+			icon: "minecraft:oak_stairs"
+			id: "06269667CCF46095"
+			rewards: [
+				{
+					count: 64
+					id: "052F38A015F2A072"
+					item: "minecraft:ladder"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "2CB2DB3D29752C31"
+					item: "kubejs:coin_nature_1"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2EAFA707537D1F10"
+					item: "farmersdelight:beef_patty"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "7F6A16CC9AEA2205"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:wooden_stairs"
+						}
+					}
+					title: "Any #minecraft:wooden_stairs"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7F8A5173392F57B1"
+					item: { Count: 8b, id: "minecraft:cobblestone_stairs" }
+					type: "item"
+				}
+			]
+			title: "&1Tell Me When We Reach 20"
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6C40BF72B572A2DD"]
+			description: [
+				"Now that you've gotten your tools and are about to go collect a bunch of stuff, it's time to make some storage for it. "
+				"Take some of your wood, and craft a chest. You will need 4 wood, 4 planks, and 1 flint."
+			]
+			id: "5B688F8C3D7ACC77"
+			rewards: [
+				{
+					id: "10D01389D58A87D7"
+					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					id: "7E70D67ABC184103"
+					item: "minecraft:cooked_mutton"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "75A9CDDCB3B2F2E0"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "0A521E7E72FF26FE"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			title: "&1Storage For Days"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B688F8C3D7ACC77"]
+			description: [
+				"Maybe you're lucky and started in a bamboo forest. Bamboo is a very useful tree since it grows really fast and when you break the bottom-most block, the whole thing comes apart. "
+				""
+				"You can use them as sticks, or you can place the bamboo sticks to grow and make a three-block-tall wall to protect your base. You can also use Berry Bushes for that, assuming you don't want to spend materials on fences."
+			]
+			id: "723C6276F9878D56"
+			rewards: [
+				{
+					count: 16
+					id: "05E85262D698DF07"
+					item: "minecraft:bamboo_fence"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6CE1EFFB8098CFED"
+					item: "twilightforest:bamboo_banister"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "715D5D7867EED419"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "413A020919EEDD9C"
+				item: { Count: 64b, id: "minecraft:bamboo" }
+				type: "item"
+			}]
+			title: "&1Bamboo Fence"
+			x: 14.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5B688F8C3D7ACC77"]
+			description: [
+				"You won't always get food rewards from the quests, so it might be a good idea to take care of that problem."
+				" "
+				"As you've crafted a hoe already, go and find some water nearby to make a field."
+				""
+				"Start planting a Cotton field because it's a key early-game resource."
+				""
+				"You can also get seeds from villages."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:wheat_seeds"
+			id: "42D7263C9C26F919"
+			rewards: [{
+				count: 5
+				id: "4D712922450AC635"
+				item: "minecraft:carrot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "6D769EFB12C8CFC8"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:rods/wood"
+					}
+				}
+				title: "Any #forge:rods/wooden"
+				type: "item"
+			}]
+			title: "&1You Reap..."
+			x: 17.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42D7263C9C26F919"]
+			description: [
+				"If you, by chance, did read the previous quest and planted the carrots, then you're fine. "
+				""
+				"Meanwhile, you should turn some more fruits and vegetables into seeds, and increase the size of your farm to get a steady supply of food."
+			]
+			id: "3EAE4CC49609F0EC"
+			rewards: [
+				{
+					count: 5
+					id: "0919B5A6A358E67B"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4130ED24C794E06B"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "4868C761BCAC7EE4"
+					item: "kubejs:coin_nature_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				count: 10L
+				id: "70824211B7E93881"
+				item: { Count: 10b, id: "minecraft:carrot" }
+				type: "item"
+			}]
+			title: "&1...What You Sow"
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42D7263C9C26F919"]
+			description: [
+				"Tired of waiting since your carrots grow sooooo slow?"
+				""
+				"Bone meal will help you to grow food in seconds. "
+				""
+				"Chop down some trees to get a bit of bone meal as a reward."
+			]
+			icon: "minecraft:bone_meal"
+			id: "2203466E1D5720E9"
+			rewards: [
+				{
+					count: 10
+					id: "4D17D594D5CA6B0A"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "7BCEECBF6BD2B11A"
+					item: {
+						Count: 1b
+						id: "gtceu:flint_axe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 63
+								ToolSpeed: 3.5f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4067D4BDB79917BA"
+					item: "minecraft:torch"
+					type: "item"
+				}
+			]
+			tags: [""]
+			tasks: [
+				{
+					count: 64L
+					id: "4647A1B4459CD8D0"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Any #minecraft:logs"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 10L
+					id: "2446B910B1F7C77C"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Any #minecraft:logs"
+					type: "item"
+				}
+			]
+			title: "&1Can You Hear the Carrots Grow?"
+			x: 17.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["714790D3C5018D59"]
+			description: ["With a sword in one hand, what can you do with the other? Right, you need a shield. Let's make one."]
+			id: "09A1AED2C1688BAE"
+			rewards: [
+				{
+					id: "1BB1D5A576047B28"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "455FAE5F3E7803E0"
+					item: "kubejs:coin_smith_1"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "52E3B12E2C1E6D3E"
+					item: "kubejs:coin_survivor_1"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6A0CAA95C8534127"
+				item: {
+					Count: 1b
+					id: "minecraft:shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&1Shields UP"
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["714790D3C5018D59"]
+			description: [
+				"You can't make a vanilla bow yet, but you can manage to get a trident!"
+				""
+				"Some monsters will become much easier to kill with this long-range weapon."
+			]
+			icon: {
+				Count: 1b
+				id: "minecraft:trident"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "46936F2F25053AC2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4E718BE42F4E22A5"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "6EEE19F860EAC0AB"
+					item: "kubejs:coin_survivor_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "727DD48E5A15E8D0"
+					item: {
+						Count: 1b
+						id: "minecraft:trident"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					entity: "minecraft:drowned"
+					id: "3EB8B8BA8C2CB01C"
+					optional_task: true
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "&1Your First 'Long Range' Weapon"
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["714790D3C5018D59"]
+			description: [
+				"If you haven't noticed, this world is a true hellscape full of Enhanced mobs and Infernals around every corner. Unlike in vanilla, a player has to actually stay aware and pay attention to what they are fighting. Here are some tips."
+				""
+				"If an infernal has Vengeance, don't shoot it with your 56-damage crossbow!"
+				""
+				"A high health infernal with regeneration is hard to kill. Even worse if it is a witch that can also heal herself. In those cases, run like hell, or bring a soul vial to capture it and throw it into Mount Doom. "
+				""
+				"Mobs sometimes flee from you if low health."
+				""
+				"Watch out for zombies with fishing poles - they can pull you to them. And zombies with a pickaxe - they can mine blocks in the mine!"
+			]
+			icon: "minecraft:bone"
+			id: "3EFDD362B895650C"
+			rewards: [{
+				count: 8
+				id: "586051856ADDB715"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3DA1F4F50CBB73FE"
+				title: "1lMoron's Manual for Massacring Monsters"
+				type: "checkmark"
+			}]
+			title: "&1Moron's Manual for Massacring Monsters"
+			x: 7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3EFDD362B895650C"]
+			description: [
+				"Creepers can make you have a baaaad time. "
+				""
+				"There are "
+				"    10% chance to spawn with the Walking Fuse property. This property makes them walk while exploding instead of standing still."
+				"    10% chance to spawn with the Ignore Walls property. This property makes them explode even if there's a wall between the player and the creeper."
+				"    7.5% chance to spawn with the Breach property. Creepers will try to create an hole in the wall to let other mobs in."
+				"    5% chance to spawn with the ability to Launch (they emit cloud particles when they can Launch). When in range to the player (based off the explosion power) will ignite and throw themselves to the player. At lower world difficulty the launch is less accurate and can miss the player."
+				"    If the creeper's both Breaching and Launching they will launch and try to breach walls, exploding on contact with them or if in range of the player."
+				"    2% chance to spawn as a Creeper Cena (bigger explosion)."
+			]
+			icon: "minecraft:gunpowder"
+			id: "1BE1C84963EDB1B9"
+			rewards: [{
+				count: 4
+				id: "41B86C4A2875B7AF"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			tasks: [{
+				id: "044C7451689D6827"
+				type: "checkmark"
+			}]
+			title: "&1Creeping Dread"
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1BE1C84963EDB1B9"]
+			description: [
+				"Some spider have nasty modifiers:"
+				""
+				"10% chance to spawn as a Web Thrower. Spiders will throw webs at the player stackingly slowing him down, or place a Cobweb if missed."
+				"Cave Spiders also poison the entity hit."
+				""
+				"They take -90% damage from falls."
+			]
+			icon: "minecraft:string"
+			id: "47BC257C3F28AB49"
+			rewards: [{
+				count: 8
+				id: "5622CD74E6985F3E"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			tasks: [{
+				id: "620E6A50E764E892"
+				title: "&1Caught in the Web"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["47BC257C3F28AB49"]
+			description: [
+				"Witch has become much more dangerous since now they can throw lingering instead of splash. So run if you don't have gears to fight it."
+				""
+				"It's not suggested to left a witch inside a village. They now have 33% chance to be able to perform Dark Arts: summons and electrocutes a Villager to spawn a new Witch."
+			]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:healing"
+				}
+			}
+			id: "6D5A1CDA9A712C65"
+			rewards: [
+				{
+					count: 4
+					id: "63E01FF41E0E7BE2"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_regeneration"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7944BB667E5BDADE"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "760DFFE491AD7A27"
+				type: "checkmark"
+			}]
+			title: "&1Dark Magician"
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["47BC257C3F28AB49"]
+			description: [
+				"Blazes are all infernals, and all nasty. Avoid like a plague. Get awesome weapons, awesome armor, and prepare for a fight. "
+				""
+				"The alternative is to figure out a way to destroy them with technology."
+				""
+				"The alternative to the alternative is to figure out a different way to get blazepowder and blaze rods."
+			]
+			icon: "minecraft:blaze_rod"
+			id: "4E0E31051666F7B6"
+			rewards: [{
+				id: "17DA68AD4EB2F8DB"
+				item: "minecraft:blaze_powder"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6CD07D860A926956"
+				type: "checkmark"
+			}]
+			title: "&1Flaming Idiots"
+			x: 4.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["714790D3C5018D59"]
+			icon: "minecraft:porkchop"
+			id: "09F3B8B8B2B121B3"
+			rewards: [
+				{
+					id: "6FAAFB7F291837C1"
+					item: "minecraft:cooked_porkchop"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "38FD1EA474F5CD2A"
+					item: "kubejs:coin_survivor_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.5d
+			subtitle: "Go for some pigs."
+			tasks: [{
+				entity: "minecraft:pig"
+				id: "5C6677ADB2C1D938"
+				type: "kill"
+				value: 5L
+			}]
+			title: "&1Rest in Pieces"
+			x: 9.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["714790D3C5018D59"]
+			description: ["Epic quest: Kill some sheep! (And try to get some wool, for a bed, obviously...)"]
+			icon: "minecraft:white_wool"
+			id: "2CD9B23A26B0F894"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5BE5E856C84EA79C"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "27382FEE7AB5051E"
+					item: "kubejs:coin_survivor_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				entity: "minecraft:sheep"
+				id: "444B884F61377666"
+				type: "kill"
+				value: 5L
+			}]
+			title: "&1Fluffy and Red"
+			x: 12.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["72F1F577A8F3D9AA"]
+			description: [
+				"You now have some melon slices or pumpkins but what can you do with them? "
+				""
+				"You can just eat them or... use a mallet to get some seeds. OK, let's craft one. Perhaps you can use this mallet for some other things too."
+			]
+			id: "760D5A65DE4F1687"
+			rewards: [
+				{
+					count: 4
+					id: "4EFD45546F0C02E0"
+					item: "minecraft:melon_slice"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "01E99CE2913BC05C"
+					item: "minecraft:pumpkin"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "1DE9C2FC9EF81E6A"
+				item: {
+					Count: 1b
+					id: "gtceu:wood_mallet"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							Damage: 0
+							MaxDamage: 127
+						}
+						HideFlags: 2
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			title: "&1Soft Mallet Adventure"
+			x: 17.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"760D5A65DE4F1687"
+				"2CD9B23A26B0F894"
+			]
+			description: [
+				"Sleepy time, and the end of the tutorial. "
+				""
+				"Congratulations! You've built your first hideout, and you should have a steady supply of food by now. "
+				""
+				"See you again in Tier 0!"
+			]
+			icon: "minecraft:red_bed"
+			id: "5A468B7F7A142723"
+			rewards: [
+				{
+					id: "389CFC5649EC3764"
+					item: "minecraft:cookie"
+					type: "item"
+				}
+				{
+					id: "1817DC9B6F24DF1D"
+					item: "minecraft:oak_door"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "035FC07BEB511E0C"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+				{
+					count: 10
+					id: "760DB45800583E23"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				id: "7FD52337474166D4"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:beds"
+					}
+				}
+				title: "Any #minecraft:beds"
+				type: "item"
+			}]
+			title: "&1SO...TIRED...MUST...SLEEP..."
+			x: 19.5d
+			y: 10.5d
+		}
+	]
+	title: "&1And So, It Begins"
+}

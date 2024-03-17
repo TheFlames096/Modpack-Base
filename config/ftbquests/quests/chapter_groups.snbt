@@ -1,0 +1,9 @@
+{
+	chapter_groups: [
+		{ id: "7DACA16D0CF75277", title: "Journey to the Horizon" }
+		{ id: "391B995A287CA74A", title: "The Road of Witches" }
+		{ id: "186E5F8DF2B15A7F", title: "Life and Adventure" }
+		{ id: "654621B6554AB49A", title: "Age of Industrial" }
+		{ id: "780D6481FD0ACCE5", title: "Misc" }
+	]
+}

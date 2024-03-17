@@ -1,0 +1,1783 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tier_0__stone_age"
+	group: "7DACA16D0CF75277"
+	icon: {
+		Count: 1b
+		id: "gtceu:bronze_pickaxe"
+		tag: {
+			DisallowContainerItem: 0b
+			GT.Behaviours: { }
+			GT.Tool: {
+				Damage: 0
+				HarvestLevel: 2
+				MaxDamage: 191
+				ToolSpeed: 7.0f
+			}
+			HideFlags: 2
+		}
+	}
+	id: "3C5AE774342B9AEF"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5A468B7F7A142723"]
+			description: ["You probably should have a home by now. A steady supply of food is a fundamental requirement at all times. Take this journal to keep track of the things you've eaten. You will have to travel far in this tier, better be prepared!"]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 5
+					}
+				}
+				id: "solapplepie:lunchbag"
+			}
+			id: "265526DA221CB12D"
+			rewards: [
+				{
+					id: "4128032304C5C0EA"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 5
+							}
+						}
+						id: "solapplepie:lunchbag"
+					}
+					type: "item"
+				}
+				{
+					id: "11642A43EE4D4B18"
+					item: "solapplepie:food_book"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [{
+				id: "0C46A062D3B18386"
+				type: "checkmark"
+			}]
+			title: "&2Ready, Set, Go!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["265526DA221CB12D"]
+			description: ["In a strange vision you saw a big structure which would allow you to make charcoal. Finally some torches! According to your calculations, you will need a lot of sand for that."]
+			icon: "minecraft:sand"
+			id: "4CDFBAB3E8C82646"
+			rewards: [
+				{
+					count: 16
+					id: "74A3B0E6DE18CA83"
+					item: "minecraft:sandstone"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "60265CC80BF38E8B"
+					item: "aquaculturedelight:unusual_fish_soup"
+					type: "item"
+				}
+				{
+					id: "6CAFD606459AC24F"
+					table_id: 2808411397077784956L
+					title: "LootBag (Basic Stone Age)"
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				count: 128L
+				id: "5A96223D3B80725B"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:sand"
+					}
+				}
+				title: "Any #minecraft:sand"
+				type: "item"
+			}]
+			title: "&2Sand: The Gathering"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["265526DA221CB12D"]
+			description: ["Most things are unavailable at the moment, so let's begin with something simple. Take some of your cobblestone and smelt it into regular stone. Since this modpack is evil, you'll need to use wood for that. How much fun is that?!"]
+			icon: "minecraft:stone"
+			id: "032F2E16BF94A182"
+			rewards: [{
+				count: 16
+				id: "7CD0471DBCF1EA00"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				count: 25L
+				id: "52A96826C2EBC7B9"
+				item: { Count: 25b, id: "minecraft:stone" }
+				type: "item"
+			}]
+			title: "&2Basic Processing"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["265526DA221CB12D"]
+			description: ["While bored, you thought that it might be a good idea to take up pottery. You should go and find some clay, the riverbanks should have some."]
+			id: "09FB4738DE6A640D"
+			rewards: [
+				{
+					count: 16
+					id: "51376ADA8C912740"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "17BEF0AA0637D1D0"
+					item: "farmersdelight:bacon_sandwich"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "37E4A756535D5736"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+				{
+					count: 10
+					id: "190B7C2F5154CB9F"
+					item: "kubejs:coin_exploration_1"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 128L
+				id: "29F4423EDC9316B7"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			title: "&2Clay: The Gathering"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["032F2E16BF94A182"]
+			description: ["This fancy little device works (almost...) like a macerator. Some people say it's even better, since it does not require power, yay! You only need to craft one for this quest, but you probably should make some more if you can..."]
+			icon: {
+				Count: 1b
+				id: "gtceu:flint_mortar"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						AttackDamage: 0.0f
+						AttackSpeed: -2.4f
+						Damage: 0
+						MaxDamage: 63
+					}
+					HideFlags: 2
+				}
+			}
+			id: "4C3BBAED17D985B1"
+			rewards: [{
+				count: 10
+				id: "705DB3ED5FE71E3E"
+				item: "kubejs:coin_technique_1"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E89E879F9052662"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/mortars"
+					}
+				}
+				title: "Any #forge:tools/mortars"
+				type: "item"
+			}]
+			title: "&2Macerator v0.1 Alpha"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"09FB4738DE6A640D"
+				"4C3BBAED17D985B1"
+			]
+			description: [
+				"You tried to move water with your bare hands, which didn't work at all. Luckily, you remember how to make a bucket out of clay dust."
+				""
+				"Put it in a mortar to get small clay dust which can be crafted to clay dust."
+				""
+				"Be aware that this bucket cannot carry hot fluid..."
+			]
+			icon: "ceramicbucket:unfired_clay_bucket"
+			id: "626767AC75C16E73"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					icon: { Count: 4b, id: "farmersdelight:sweet_berry_cookie" }
+					id: "5DF4D1A9BDBAB443"
+					table_id: 3056090701725941106L
+					title: "Cookies"
+					type: "choice"
+				}
+				{
+					count: 10
+					id: "5850B3B5D3548CEA"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "73A56C8D17ADD1CB"
+					item: "ceramicbucket:unfired_clay_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3399ECE5A3DAD890"
+					item: "ceramicbucket:ceramic_bucket"
+					type: "item"
+				}
+			]
+			title: "&2Something to Carry Liquids"
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["626767AC75C16E73"]
+			description: ["After you found a way to move water around, you had another brilliant idea: Paper! Paper is no longer made with sugarcane, you'll need wood pulp instead. You'll need a lot of wood to craft wood pulp, so better grab your axe and go chop some trees."]
+			icon: "minecraft:paper"
+			id: "665BB54FD475F678"
+			rewards: [
+				{
+					count: 4
+					id: "1B77C40B9A9A7303"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "6A77972C1A9045FA"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "4BF9FB2B341A32A3"
+					item: "gtceu:wood_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2111CFD786F6BFDF"
+					item: { Count: 16b, id: "minecraft:paper" }
+					type: "item"
+				}
+			]
+			title: "&2Book Parts"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["665BB54FD475F678"]
+			description: [
+				"As you may have noticed, you cannot turn clay into bricks directly. Well, to be fair, it wasn't a good recipe anyway. You'll probably end up with something bread-shaped. "
+				""
+				"In order to make bricks, you need a form. Get yourself a knife by putting flint above a stick on the crafting grid. With a knife, you can cut a brick sized piece out and craft a blank pattern. It's as easy as that."
+			]
+			icon: "gtceu:brick_wooden_form"
+			id: "5F453C7E9204F52B"
+			rewards: [{
+				count: 10
+				id: "4F6F3363D142A16B"
+				item: "kubejs:coin_technique_1"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "54A18326379C4FA4"
+					item: "gtceu:empty_wooden_form"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "07D921A7806104B9"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/knives"
+						}
+					}
+					optional_task: true
+					title: "Any #forge:tools/knives"
+					type: "item"
+				}
+				{
+					id: "378E748DB30888DA"
+					item: "gtceu:brick_wooden_form"
+					type: "item"
+				}
+			]
+			title: "&2Forming Press v0.1"
+			x: 0.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5F453C7E9204F52B"]
+			description: ["Your vision becomes more clear, you'll need bricks for your first multiblock structure. You think that 104 bricks should be enough. However, the bricks you'll need are somewhat special. Make sure to craft the correct ones!"]
+			icon: "gtceu:coke_oven_brick"
+			id: "049B4D806AC99E5C"
+			rewards: [
+				{
+					id: "5E04AF0BE392DF35"
+					item: "farmersdelight:hamburger"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "2D7A0FF76963D9F7"
+					item: "kubejs:coin_smith_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 104L
+					id: "718939FE71C4C6B8"
+					item: "gtceu:compressed_coke_clay"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 104L
+					id: "6DA029ABF9BE45EC"
+					item: "gtceu:coke_oven_brick"
+					type: "item"
+				}
+			]
+			title: "&2Another Brick in the Wall"
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"049B4D806AC99E5C"
+				"4CDFBAB3E8C82646"
+			]
+			description: [
+				"It's time to get yourself some charcoal. For that, we're going to build a coke oven. Good that you just collected a lot of resources! What a coincidence..."
+				""
+				"Even though Waila says you can't, you can punch these blocks to get them back if you mess up the placement before you have a metal pickaxe."
+				""
+				"It may be useful to remember that the oven doesn't automatically output its fluid or item contents. The hatches can help to change that."
+			]
+			id: "406B84753C2CF8EB"
+			rewards: [
+				{
+					count: 2
+					id: "6A9F32D763F3B323"
+					item: "farmersdelight:bacon_and_eggs"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "0DB0A09773B9E408"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [
+				{
+					id: "1D7FBEAE2F825174"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					id: "4835E75B56B7C1FD"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+				{
+					id: "52BC7C41A8B5DDE0"
+					item: "gtceu:coke_oven_hatch"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "&2Getting (Char)coal"
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["406B84753C2CF8EB"]
+			description: ["Now that you have a coke oven, you can start producing charcoal. The more, the better. Don't worry about the creosote. I have another deal for you..."]
+			id: "3834A035016F3AF6"
+			rewards: [
+				{
+					id: "5B4A80314E22EE41"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "14A9C42BA3491586"
+					item: "aquaculturedelight:cooked_small_turtle_meat"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3AB5925B3DCF99B0"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "07FBB388AB428AA4"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			title: "&2Finally, Some Powerful Fuel"
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["3834A035016F3AF6"]
+			description: ["With your newly acquired fuel source, you are now ready to process more advanced materials than stone or clay; Iron or Copper, for example. Just in case you don't know, they spawn in rather large veins. Use the following quests to locate the most important veins."]
+			icon: "minecraft:raw_iron_block"
+			id: "3245C6FA40AA9954"
+			tasks: [{
+				id: "6F583EBB248E4238"
+				type: "checkmark"
+			}]
+			title: "&2Copper Sky, Iron Curtain"
+			x: -10.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["3245C6FA40AA9954"]
+			description: [
+				"Find iron, copper and tin ore. Very funny... How can you mine these with just a flint pickaxe?"
+				""
+				"I have an idea; bring me some of the stone you mined with your flint pickaxe and I will give you a better tool head in exchange."
+				""
+				"Warning: You'd better find iron ore before your pickaxe broken, unless you want to spend hours grinding for small rocks."
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:iron_pickaxe"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "2AE8854FDF9F3673"
+			rewards: [
+				{
+					id: "21BE8908B8BD537F"
+					item: {
+						Count: 1b
+						id: "gtceu:iron_pickaxe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 6.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "46044DB014B33B22"
+					table_id: 419905213489546425L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2808A587B330B125"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 256L
+				id: "58F286E2E9C665BD"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "&2Upgrade 2.0"
+			x: -10.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["3245C6FA40AA9954"]
+			description: [
+				"GregTech ore generation is based on veins."
+				""
+				"In GregTech Modern, veins are based on a circle shape and spawned randomly. Mostly there will be veins beneath the small stone piles, which may help to locate the veins."
+				""
+				"The generation of Ore Chunks is not related to biomes."
+				""
+				"For reading all the way, here's some iron."
+			]
+			icon: "minecraft:iron_ore"
+			id: "47131CAE7BC3924F"
+			rewards: [{
+				id: "2437C0E8F314D0D7"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "568629AD549024EC"
+				type: "checkmark"
+			}]
+			title: "&2How the Heck Do I Find Ores?"
+			x: -8.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["47131CAE7BC3924F"]
+			description: [
+				"Now that you know what an Ore Vein is, dig all the way down to bedrock to find if there is a vein located in it."
+				""
+				"Check out an ore in JEI to see where you can find a vein that contains it. Search for it and click on it to get this info, among other things."
+				""
+				"There are many types of ores, even just for getting one material like Iron, so don't stick to only one ore."
+			]
+			icon: "minecraft:deepslate_iron_ore"
+			id: "792FD0B69FF73EE0"
+			rewards: [{
+				id: "78D536770E191A0A"
+				item: "miners_delight:vegetable_soup_cup"
+				type: "item"
+			}]
+			tasks: [{
+				id: "349BD3888293EFDE"
+				type: "checkmark"
+			}]
+			title: "&2Digging Deeper"
+			x: -7.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["2AE8854FDF9F3673"]
+			description: [
+				"Tin ingots can be created by smelting Tin, Cassiterite, or Cassiterite Sand ore. Tin and Cassiterite ores are only found at high altitudes, but Cassiterite Sand ore is plentiful near the surface."
+				""
+				"If you get lucky and find a high altitude Tin/Cassiterite vein, save one of the Cassiterite ore to find a Mica vein later on using the ore finder wand."
+			]
+			icon: "gtceu:tin_ingot"
+			id: "240E6D1A6C9501F0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "53CBC212B1D5D73A"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6C24C243A7604C3C"
+					table_id: 6992140527582247259L
+					type: "choice"
+				}
+				{
+					count: 10
+					id: "4B78539A2953F507"
+					item: "kubejs:coin_smith_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				count: 16L
+				id: "476141D95A73EAC2"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/tin"
+					}
+				}
+				title: "Any #forge:ingots/tin"
+				type: "item"
+			}]
+			title: "&2Tin"
+			x: -8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2AE8854FDF9F3673"]
+			description: ["Copper ingots can be created by smelting copper, chalcopyrite, or malachite ore."]
+			id: "1B8C82D9F9EF8F62"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5F9169918D07ED97"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3BFD124FE3D00A56"
+					table_id: 3957302745634910997L
+					type: "choice"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				count: 48L
+				icon: "minecraft:copper_ingot"
+				id: "5C3173070A4FF1D7"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/copper"
+					}
+				}
+				title: "Any #forge:ingots/copper"
+				type: "item"
+			}]
+			title: "&2Copper"
+			x: -12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"240E6D1A6C9501F0"
+				"1B8C82D9F9EF8F62"
+			]
+			description: ["Now that you've found copper and tin, you should make yourself some bronze. Use your macer... mortar to grind up some copper and tin ingots, and mix them together!"]
+			icon: "gtceu:bronze_dust"
+			id: "17ED5D5CD3A38641"
+			rewards: [
+				{
+					id: "277907E7BD5184A7"
+					item: "farmersdelight:fried_rice"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "14775305272CBDB1"
+					item: "kubejs:coin_chemist_1"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "6822B5032CEF8074"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [
+				{
+					count: 32L
+					id: "4F1A09934B3EB381"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/bronze"
+						}
+					}
+					optional_task: true
+					title: "Any #forge:dusts/bronze"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "4809979310F67CF0"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/bronze"
+						}
+					}
+					title: "Any #forge:ingots/bronze"
+					type: "item"
+				}
+			]
+			title: "&2Making Bronze"
+			x: -10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["17ED5D5CD3A38641"]
+			icon: "gtceu:bronze_large_fluid_pipe"
+			id: "77D4467D2308B338"
+			rewards: [{
+				count: 2
+				id: "627BE119AABD6020"
+				item: "ironchest:wood_to_iron_chest_upgrade"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [
+				{
+					count: 6L
+					id: "36B42A5330F8E043"
+					item: "gtceu:bronze_plate"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3082B31ECB6A06EF"
+					item: "gtceu:bronze_large_fluid_pipe"
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2AE8854FDF9F3673"]
+			description: [
+				"With iron tools, you are able to mine most of the Overworld ores. You've probably already found iron or magnetite, given how common it is. So bring me some ores and make some iron ingots out of them."
+				""
+				"To see where an ore can be found, click the raw ore in JEI, and it will show you more details. "
+			]
+			icon: "minecraft:raw_iron"
+			id: "0AF0B401D47C3D1E"
+			rewards: [
+				{
+					id: "17CC347A0AC51955"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6EC2B20A268C89C1"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "167A964D3F076619"
+					item: "kubejs:coin_exploration_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "54D1679D1766BF07"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1103B7BEC4037F97"
+					item: "gtceu:raw_magnetite"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "7E1C5A182394B955"
+					item: "gtceu:raw_yellow_limonite"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "6005D87C2B39EBDE"
+					item: "gtceu:raw_goethite"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "6EDD50CB3C4E080D"
+					item: "gtceu:raw_hematite"
+					type: "item"
+				}
+			]
+			title: "&2Iron Ore"
+			x: -11.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["2AE8854FDF9F3673"]
+			description: [
+				"Can be found between Y 5-60 either as \"Copper Ore\" or \"Chalcopyrite\". Most of the time you'll find it together with  \"Iron\" and \"Pyrite\"."
+				""
+				"To see where an ore can be found, click the raw ore in JEI, and it will show you more details."
+			]
+			icon: "minecraft:raw_copper"
+			id: "4668C059934E8AD2"
+			rewards: [
+				{
+					id: "34B9ABCB9AF10D32"
+					item: "farmersdelight:bacon_sandwich"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1C5853933B51C5BC"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "1A24D579FDE82156"
+					item: "kubejs:coin_exploration_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "3F39B5E206260C4F"
+					item: "minecraft:raw_copper"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "0E5115B9CAFA7E87"
+					item: "gtceu:raw_chalcopyrite"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "675DC4E8CF284B88"
+					item: "gtceu:raw_pyrite"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "6EA09715D0FF8CB9"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+			]
+			title: "&2Copper Ore"
+			x: -14.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["2AE8854FDF9F3673"]
+			description: [
+				"Another copper source is \"malachite\" which can be found between Y 10-40. This vein contains more iron ore variants like \"goethite\", \"yellow limonite\" and \"hematite\"."
+				""
+				"To see where an ore can be found, click the raw ore in JEI, and it will show you more details."
+			]
+			icon: "gtceu:raw_malachite"
+			id: "5B5A5DE8C0A5ED1F"
+			tasks: [
+				{
+					count: 16L
+					id: "6DD721A2008EA678"
+					item: "gtceu:raw_malachite"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "125DC7F12693ED2D"
+					item: "gtceu:raw_yellow_limonite"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "3E9D549378C6AFC7"
+					item: { Count: 64b, id: "gtceu:raw_hematite" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "63331C86453107AA"
+					item: { Count: 64b, id: "gtceu:raw_goethite" }
+					type: "item"
+				}
+			]
+			title: "&2Malachite"
+			x: -13.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["2AE8854FDF9F3673"]
+			description: [
+				"Iron can be found in multiple veins. "
+				"Magnetite veins (Y 30-180), Chalcopyrite veins (Y 5-60), and Limonite veins (Y 10-40) all contain iron ore."
+			]
+			id: "29E747C65F0CE2A4"
+			rewards: [
+				{
+					id: "51779974E6671F88"
+					item: "minecraft:pumpkin_pie"
+					type: "item"
+				}
+				{
+					id: "4ABB134342B60A16"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3E0F2F1BC2C6063E"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+				{
+					count: 10
+					id: "771E2C3E16A12C18"
+					item: "kubejs:coin_smith_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				count: 72L
+				id: "38B32AFF9319E9CA"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "&2Getting Iron"
+			x: -18.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["29E747C65F0CE2A4"]
+			description: [
+				"In order to craft even basic machines, you'll need new tools. Most of them can be replaced by machines later. For now, you should become familiar with each of their recipes, as you will need a lot of these tools, starting today."
+				""
+				"Your new tools can also be used to make Railcraft water tanks, a very useful multiblock considering the finite water feature."
+				""
+				"There are also electric versions of the tools, you can upgrade later if you want. Also, there are many versions of the tools, they generally follow the same rules as tinkers parts in terms of how good they are, similarly to turbines. You can look at the spreadsheet for more info on GT tool stats."
+				""
+				"For this quest, you can use whatever materials you want.Higher tier tools need steel or tungstensteel rods instead of sticks."
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:iron_wrench"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "17E4B74FAA1C8192"
+			rewards: [
+				{
+					count: 2
+					id: "76552465463FC6D8"
+					item: "miners_delight:baked_squid"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "5610AE913CD94724"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [
+				{
+					id: "6C75B2F4DBC2C093"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/hammers"
+						}
+					}
+					title: "Any #forge:tools/hammers"
+					type: "item"
+				}
+				{
+					id: "61FC0A592F6137A0"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wrenches"
+						}
+					}
+					title: "Any #forge:tools/wrench"
+					type: "item"
+				}
+				{
+					id: "5C8EF80B9A3DEA7F"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/files"
+						}
+					}
+					title: "Any #forge:tools/files"
+					type: "item"
+				}
+				{
+					id: "0AF0E9F55C24C0B6"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/screwdrivers"
+						}
+					}
+					title: "Any #forge:tools/screwdrivers"
+					type: "item"
+				}
+				{
+					id: "08CAF2312B3F8158"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/saws"
+						}
+					}
+					title: "Any #forge:tools/saws"
+					type: "item"
+				}
+			]
+			title: "&2Important Tools"
+			x: -18.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"17ED5D5CD3A38641"
+				"17E4B74FAA1C8192"
+				"145DAE845A919416"
+			]
+			description: ["As you've gathered and crafted all materials and tools you need for your basic steam machinery, you may now proceed to the next tier. Keep in mind that you'll need mountains of resources in order to craft even the simplest things, so you probably should stock up on all ores in this tier. But that's up to you."]
+			icon: "gtceu:lp_steam_solid_boiler"
+			id: "3C4C4928031509E8"
+			rewards: [
+				{
+					count: 6
+					id: "5513C0E0C9FC7FEE"
+					item: "gtceu:bronze_small_fluid_pipe"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "144A3DE836FE9184"
+					table_id: 2808411397077784956L
+					type: "random"
+				}
+				{
+					count: 20
+					id: "5801D50141DE465F"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 3.0d
+			tasks: [
+				{
+					count: 5L
+					id: "36658B282F21D36B"
+					item: "gtceu:bronze_plate"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "52A3092284122C86"
+					item: "gtceu:brick_wooden_form"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "23396B780ACAF430"
+					item: "kubejs:unfired_clay_brick"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "31F713B6A6572875"
+					item: { Count: 2b, id: "minecraft:bricks" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "1A1C17BC968ECAAD"
+					item: { Count: 7b, id: "gtceu:iron_plate" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0A849B738C71DEED"
+					item: "minecraft:furnace"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1A40E0DA5EFE18E5"
+					item: "minecraft:blast_furnace"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4C29279E28F5497B"
+					item: "gtceu:lp_steam_solid_boiler"
+					type: "item"
+				}
+			]
+			title: "&2You Shall Proceed"
+			x: -13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["17E4B74FAA1C8192"]
+			description: [
+				"Drawers, which can have up to 4 slots each, holding 16 stacks per slot."
+				""
+				"However, they do come with some downsides. You won't be able to make them point up or down, and you can only access the contents from the front. The automation can use any side. "
+				""
+				"All drawer recipes has been converted to \"Framed Drawer\" recipes. You can use any drawers to complete the quest."
+			]
+			icon: {
+				Count: 1b
+				id: "framedcompactdrawers:framed_full_one"
+				tag: {
+					MatF: {
+						Count: 1
+						id: "minecraft:air"
+					}
+					MatS: {
+						Count: 1
+						id: "minecraft:stripped_oak_wood"
+					}
+					MatT: {
+						Count: 1
+						id: "minecraft:oak_wood"
+					}
+				}
+			}
+			id: "2A7C980547F65768"
+			rewards: [
+				{
+					count: 2
+					id: "579CB35C589474CE"
+					item: "farmersdelight:stuffed_potato"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1726753E874E697C"
+					item: {
+						Count: 4b
+						id: "framedcompactdrawers:framed_full_one"
+						tag: {
+							MatF: {
+								Count: 1
+								id: "minecraft:air"
+							}
+							MatS: {
+								Count: 1
+								id: "minecraft:stripped_jungle_wood"
+							}
+							MatT: {
+								Count: 1
+								id: "minecraft:jungle_wood"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "12D091C441ABF419"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "650B7A70CB7196C2"
+					item: {
+						Count: 1b
+						id: "framedcompactdrawers:framed_full_one"
+						tag: {
+							MatF: {
+								Count: 1
+								id: "minecraft:air"
+							}
+							MatS: {
+								Count: 1
+								id: "minecraft:stripped_oak_wood"
+							}
+							MatT: {
+								Count: 1
+								id: "minecraft:oak_wood"
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2C828ED8B18C296C"
+					item: {
+						Count: 1b
+						id: "framedcompactdrawers:framed_full_two"
+						tag: {
+							MatF: {
+								Count: 1
+								id: "minecraft:air"
+							}
+							MatS: {
+								Count: 1
+								id: "minecraft:stripped_oak_wood"
+							}
+							MatT: {
+								Count: 1
+								id: "minecraft:oak_wood"
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "12F107399D62A1F9"
+					item: {
+						Count: 1b
+						id: "framedcompactdrawers:framed_full_four"
+						tag: {
+							MatF: {
+								Count: 1
+								id: "minecraft:air"
+							}
+							MatS: {
+								Count: 1
+								id: "minecraft:stripped_oak_wood"
+							}
+							MatT: {
+								Count: 1
+								id: "minecraft:oak_wood"
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&2Better Than Barrels"
+			x: -20.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2A7C980547F65768"]
+			description: ["Now you can really make some swaggy and oeven fancierr drawers by using your 2x2 crafting grids, all you have to do is place some decorative blocks and it will take their texture. Put your drawer at the bottom right, the TOP left is the outer square, bottom left is for the front face, and top right is for the borders. This works with almost all decorative blocks."]
+			icon: "framedcompactdrawers:framed_full_four"
+			id: "1C630FD1CC3FE8D1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6E825032DFB6222E"
+					table_id: 1512298400581230033L
+					type: "choice"
+				}
+				{
+					count: 5
+					id: "05D7B905D21443C8"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "59C9FD1D2B8CD146"
+				type: "checkmark"
+			}]
+			title: "&2Framing Drawers"
+			x: -22.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2A7C980547F65768"]
+			description: ["They are very compact and add some fanciness to your glorious dirt base. "]
+			id: "11E9ABBCD79B4A4D"
+			rewards: [
+				{
+					count: 8
+					id: "026401BC3623DBE0"
+					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "2595D0F0C3E050AA"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "47E4B7C831B607CE"
+					item: {
+						Count: 4b
+						id: "framedcompactdrawers:framed_half_one"
+						tag: {
+							MatF: {
+								Count: 1
+								id: "minecraft:air"
+							}
+							MatS: {
+								Count: 1
+								id: "minecraft:stripped_oak_wood"
+							}
+							MatT: {
+								Count: 1
+								id: "minecraft:oak_wood"
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "178C2C268409000B"
+					item: {
+						Count: 4b
+						id: "framedcompactdrawers:framed_half_two"
+						tag: {
+							MatF: {
+								Count: 1
+								id: "minecraft:air"
+							}
+							MatS: {
+								Count: 1
+								id: "minecraft:stripped_oak_wood"
+							}
+							MatT: {
+								Count: 1
+								id: "minecraft:oak_wood"
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1158788D2E25CCC4"
+					item: {
+						Count: 4b
+						id: "framedcompactdrawers:framed_half_four"
+						tag: {
+							MatF: {
+								Count: 1
+								id: "minecraft:air"
+							}
+							MatS: {
+								Count: 1
+								id: "minecraft:stripped_oak_wood"
+							}
+							MatT: {
+								Count: 1
+								id: "minecraft:oak_wood"
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "&2Half Drawers"
+			x: -20.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["17E4B74FAA1C8192"]
+			description: ["Making paper out of wood pulp and water can be tedious and difficult. Why not use a mortar to grind the sugar cane into chad and press it with two stone slabs to paper? Later on you can use the chemical bath for a even better ratio."]
+			icon: "gtceu:paper_dust"
+			id: "061AE292A623FC5E"
+			rewards: [
+				{
+					count: 4
+					id: "3053DBD0ABAD003B"
+					item: "gtceu:damascus_steel_ingot"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "645FCCD0FD7CEB41"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3AFBDC43E7D81CE9"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mortars"
+						}
+					}
+					optional_task: true
+					title: "Any #forge:tools/mortars"
+					type: "item"
+				}
+				{
+					count: 45L
+					id: "57A478FAE662E904"
+					item: "minecraft:sugar_cane"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "2C327D3E7B787482"
+					item: "gtceu:paper_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "5C434684F0EB23ED"
+					item: "minecraft:paper"
+					type: "item"
+				}
+			]
+			title: "&2Chad - A Better Way to Make Paper"
+			x: -18.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["17E4B74FAA1C8192"]
+			description: [
+				"Now that you are starting to find more and more iron, you feel your wood chests are too small to hold all the stuff. "
+				""
+				"It's time to upgrade your chests to iron chests! You can just build a new chest or upgrade the wood chest with a wood-to-iron-chest upgrade item."
+			]
+			icon: "ironchest:iron_chest"
+			id: "7B8F635119F6D47A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "13A77A3745EB87DA"
+					table_id: 4704976742169210332L
+					type: "choice"
+				}
+				{
+					count: 5
+					id: "610A68CDE6397D0F"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "08135CC4D6C01CB2"
+					item: { Count: 8b, id: "gtceu:double_iron_plate" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "63C4350E2C219C12"
+					item: { Count: 4b, id: "gtceu:iron_screw" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "757D23964C477FEA"
+					item: { Count: 2b, id: "minecraft:chest" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1D9BCC7EB7B3965C"
+					item: { Count: 2b, id: "ironchest:iron_chest" }
+					type: "item"
+				}
+			]
+			title: "&2More Compact Storage"
+			x: -23.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7B8F635119F6D47A"]
+			description: ["If you found enough gold, you can upgrade your chest to make it an even bigger inventory of 9x9. You can just build a new chest or upgrade the iron chest with a wood-to-gold-chest upgrade item. You can use an assembler to make them a little cheaper too, if you have one."]
+			icon: "ironchest:gold_chest"
+			id: "3B5BFE76C97EFAE2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2146BA322FFFA715"
+					table_id: 7258788029406961043L
+					type: "choice"
+				}
+				{
+					count: 5
+					id: "153355973339D590"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1B8F54ABA6046308"
+					item: "gtceu:double_gold_plate"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1C15899DC5B5CB47"
+					item: { Count: 2b, id: "gtceu:gold_screw" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5F850B1B853E7903"
+					item: "minecraft:chest"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "223044992DD8747C"
+					item: "ironchest:gold_chest"
+					type: "item"
+				}
+			]
+			title: "&2Even More Compact Storage"
+			x: -23.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["17E4B74FAA1C8192"]
+			description: [
+				"The crowbar is the GT tool used to remove a cover off of a machine, pipe, or wire. Covers can be decorative, functional like pumps and conveyors, or for safety, like putting a wooden plank over your steam pipes so they don't burn you."
+				""
+				"Sorry, it only comes in blue!"
+				""
+				"Yes, we know there are also red crowbars, but they are from Railcraft and generally inferior. Better ignore them."
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:iron_crowbar"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						AttackDamage: 4.0f
+						AttackSpeed: -2.4f
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "1F9387BF325CA07B"
+			tasks: [{
+				id: "6AD2DAE67AB272DB"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/crowbars"
+					}
+				}
+				title: "Any #forge:tools/crowbars"
+				type: "item"
+			}]
+			title: "&2Got a Flat Tire?"
+			x: -16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["17E4B74FAA1C8192"]
+			description: ["Your lunch bag is now abused and rather old so it's time to get something better. Let's craft a lunch box which can hold way more food."]
+			id: "6E67441FD3DE2AEB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "081183FC7288EA45"
+					table_id: 253710512077135095L
+					type: "choice"
+				}
+				{
+					count: 5
+					id: "207FA3F0494C7065"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "26A67FC862C2C5DF"
+					item: "kubejs:coin_survivor_1"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "55DDF13EB218B544"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 9
+						}
+					}
+					id: "solapplepie:lunchbox"
+				}
+				type: "item"
+			}]
+			title: "&2A Better Lunch Bag"
+			x: -23.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6E67441FD3DE2AEB"]
+			id: "423799F568B630D3"
+			rewards: [
+				{
+					count: 10
+					id: "0AFBF5BFB13AACDB"
+					item: "kubejs:coin_survivor_1"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "44EE2D00835AEFB6"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0CD6E10D316F0B8C"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 14
+						}
+					}
+					id: "solapplepie:golden_lunchbox"
+				}
+				type: "item"
+			}]
+			title: "&2Even More Better Lunch Bag"
+			x: -25.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["17E4B74FAA1C8192"]
+			description: [
+				"...the whole world looks like a nail.  When looking for good tool materials, see \"GregTech Material Tools\" tab in NEI. Remember that NEI bookmarks are your friends."
+				""
+				"The GT tools each have special uses."
+				""
+				"Screwdriver - Used on covers to change their behavior."
+				""
+				"Wrench - Used to change the output direction on a GT machine, or to break it. Can also disconnect/connect pipes or enable their built in shutter."
+				""
+				"Crowbar - Remove covers from machines or pipes."
+				""
+				"Wire cutters - Connecting/disconnecting/breaking wires/cables."
+				""
+				"Soft mallet - Turning machines on/off."
+				""
+				"Hammer - Prospecting for ores in a limited way in front of you, and smashing ore blocks into crushed ores."
+				""
+				"On a side note, Tin Pipes need a Steel Wrench to dismantle, so don't place them randomly."
+			]
+			icon: {
+				Count: 1b
+				id: "gtceu:iron_hammer"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						AttackDamage: 3.0f
+						AttackSpeed: -2.8f
+						Damage: 0
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "145DAE845A919416"
+			tasks: [{
+				id: "7CF58ADE22C4410F"
+				type: "checkmark"
+			}]
+			title: "&2When All You Have is a Hammer..."
+			x: -16.0d
+			y: 4.0d
+		}
+	]
+	title: "&2Tier 0 - Stone Age"
+}

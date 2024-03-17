@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bio_for_masses"
+	group: "654621B6554AB49A"
+	id: "38E78AE531C9953A"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+	title: "Bio for Masses"
+}

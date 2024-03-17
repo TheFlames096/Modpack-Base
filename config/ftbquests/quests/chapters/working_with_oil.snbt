@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "working_with_oil"
+	group: "654621B6554AB49A"
+	id: "1B483F5D67F649C2"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "Working with Oil"
+}

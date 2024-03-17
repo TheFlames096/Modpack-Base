@@ -1,0 +1,68 @@
+
+[client]
+	#The lower bound of tank renderer
+	#Default: 0.001
+	#Range: 0.0 ~ 1.0
+	renderLowerBound = 0.001
+	#The upper bound of tank renderer
+	#Default: 0.999
+	#Range: 0.0 ~ 1.0
+	renderUpperBound = 0.999
+
+[tank]
+	#Debug mode
+	#Default: false
+	debug = false
+	#True to allow to modify items in player attracting
+	#Default: false
+	changeItemInCreative = false
+
+	#The capacity of each tanks
+	#Unit is fabric one, 1000 mB is 81000 unit.
+	[tank.capacity]
+		#Capacity of Invalid
+		#Default: 0 mB(= 0 unit)
+		invalid = "0"
+		#Capacity of Wood
+		#Default: 16000 mB(= 1296000 unit)
+		wood = "1296000"
+		#Capacity of Iron
+		#Default: 32000 mB(= 2592000 unit)
+		iron = "2592000"
+		#Capacity of Gold
+		#Default: 48000 mB(= 3888000 unit)
+		gold = "3888000"
+		#Capacity of Diamond
+		#Default: 64000 mB(= 5184000 unit)
+		diamond = "5184000"
+		#Capacity of Emerald
+		#Default: 96000 mB(= 7776000 unit)
+		emerald = "7776000"
+		#Capacity of Star
+		#Default: 64000000 mB(= 5184000000 unit)
+		star = "5184000000"
+		#Capacity of Creative
+		#Default: 100000000000000000 mB(= 8100000000000000000 unit)
+		creative = "8100000000000000000"
+		#Capacity of Void
+		#Default: 0 mB(= 0 unit)
+		void = "0"
+		#Capacity of Copper
+		#Default: 24000 mB(= 1944000 unit)
+		copper = "1944000"
+		#Capacity of Tin
+		#Default: 128000 mB(= 10368000 unit)
+		tin = "10368000"
+		#Capacity of Stone
+		#Default: 48000 mB(= 3888000 unit)
+		stone = "3888000"
+		#Capacity of Bronze
+		#Default: 256000 mB(= 20736000 unit)
+		bronze = "20736000"
+		#Capacity of Lead
+		#Default: 512000 mB(= 41472000 unit)
+		lead = "41472000"
+		#Capacity of Silver
+		#Default: 40000 mB(= 3240000 unit)
+		silver = "3240000"
+

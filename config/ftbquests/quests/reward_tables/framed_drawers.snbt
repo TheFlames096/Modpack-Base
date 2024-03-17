@@ -1,0 +1,11 @@
+{
+	id: "14FCC36201091DD1"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ count: 4, item: "framedcompactdrawers:framed_full_one" }
+		{ count: 4, item: "framedcompactdrawers:framed_full_two" }
+		{ count: 4, item: "framedcompactdrawers:framed_full_four" }
+	]
+	title: "framed drawers"
+}

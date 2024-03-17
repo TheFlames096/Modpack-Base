@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tier_6__luv"
+	group: "7DACA16D0CF75277"
+	id: "082AB34D80521C7A"
+	order_index: 7
+	quest_links: [ ]
+	quests: [ ]
+	title: "Tier 6 - LuV"
+}

@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fishing_farming_cooking"
+	group: "186E5F8DF2B15A7F"
+	id: "2F652CB2F1E19A4D"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Fishing, Farming, Cooking"
+}

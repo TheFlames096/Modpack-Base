@@ -1,0 +1,18 @@
+{
+	id: "36EB29E1663F3315"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{
+			item: {
+				Count: 1b
+				id: "fruitsdelight:jelly_bread"
+				tag: {
+					JellyEffectRoot: ["APPLE"]
+				}
+			}
+		}
+		{ item: "farmersdelight:egg_sandwich" }
+	]
+	title: "bread choice"
+}

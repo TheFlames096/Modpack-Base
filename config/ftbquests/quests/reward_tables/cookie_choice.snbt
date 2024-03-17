@@ -1,0 +1,11 @@
+{
+	id: "2A696A4D25BFBD72"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 4, item: "farmersdelight:sweet_berry_cookie" }
+		{ count: 4, item: "farmersdelight:honey_cookie" }
+		{ count: 4, item: "ends_delight:chorus_cookie" }
+	]
+	title: "Cookie Choice"
+}

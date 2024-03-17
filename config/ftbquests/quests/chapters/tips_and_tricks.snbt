@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tips_and_tricks"
+	group: "780D6481FD0ACCE5"
+	id: "7477847862B3BB99"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Tips and Tricks"
+}

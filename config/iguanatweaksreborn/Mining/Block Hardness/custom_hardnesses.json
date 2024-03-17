@@ -1,0 +1,134 @@
+[
+  {
+    "id": "minecraft:coal_ore",
+    "value": 2.5
+  },
+  {
+    "id": "minecraft:copper_ore",
+    "value": 2.5
+  },
+  {
+    "id": "minecraft:iron_ore",
+    "value": 3.0
+  },
+  {
+    "id": "minecraft:gold_ore",
+    "value": 3.5
+  },
+  {
+    "id": "minecraft:diamond_ore",
+    "value": 4.0
+  },
+  {
+    "id": "minecraft:redstone_ore",
+    "value": 3.0
+  },
+  {
+    "id": "minecraft:lapis_ore",
+    "value": 3.0
+  },
+  {
+    "id": "minecraft:emerald_ore",
+    "value": 4.0
+  },
+  {
+    "id": "iguanatweaksexpanded:poor_copper_ore",
+    "value": 1.667
+  },
+  {
+    "id": "iguanatweaksexpanded:poor_iron_ore",
+    "value": 2.0
+  },
+  {
+    "id": "iguanatweaksexpanded:poor_gold_ore",
+    "value": 2.333
+  },
+  {
+    "id": "iguanatweaksexpanded:rich_copper_ore",
+    "value": 3.333
+  },
+  {
+    "id": "iguanatweaksexpanded:rich_iron_ore",
+    "value": 4.0
+  },
+  {
+    "id": "iguanatweaksexpanded:rich_gold_ore",
+    "value": 4.6666
+  },
+  {
+    "id": "minecraft:deepslate_coal_ore",
+    "value": 4.0
+  },
+  {
+    "id": "minecraft:deepslate_copper_ore",
+    "value": 4.0
+  },
+  {
+    "id": "minecraft:deepslate_iron_ore",
+    "value": 4.5
+  },
+  {
+    "id": "minecraft:deepslate_gold_ore",
+    "value": 5.0
+  },
+  {
+    "id": "minecraft:deepslate_diamond_ore",
+    "value": 6.0
+  },
+  {
+    "id": "minecraft:deepslate_redstone_ore",
+    "value": 4.5
+  },
+  {
+    "id": "minecraft:deepslate_lapis_ore",
+    "value": 4.5
+  },
+  {
+    "id": "minecraft:deepslate_emerald_ore",
+    "value": 6.0
+  },
+  {
+    "id": "iguanatweaksexpanded:poor_deepslate_copper_ore",
+    "value": 2.667
+  },
+  {
+    "id": "iguanatweaksexpanded:poor_deepslate_iron_ore",
+    "value": 3.0
+  },
+  {
+    "id": "iguanatweaksexpanded:poor_deepslate_gold_ore",
+    "value": 3.333
+  },
+  {
+    "id": "iguanatweaksexpanded:rich_deepslate_copper_ore",
+    "value": 5.333
+  },
+  {
+    "id": "iguanatweaksexpanded:rich_deepslate_iron_ore",
+    "value": 6.0
+  },
+  {
+    "id": "iguanatweaksexpanded:rich_deepslate_gold_ore",
+    "value": 6.666
+  },
+  {
+    "id": "minecraft:ancient_debris",
+    "value": 12.0
+  },
+  {
+    "id": "minecraft:budding_amethyst",
+    "value": 4.5
+  },
+  {
+    "id": "#iguanatweaksreborn:obsidians",
+    "value": 25.0
+  },
+  {
+    "id": "minecraft:powder_snow",
+    "value": 2.5
+  },
+  {
+    "id": "#minecraft:leaves",
+    "value": 0.4
+  }
+]

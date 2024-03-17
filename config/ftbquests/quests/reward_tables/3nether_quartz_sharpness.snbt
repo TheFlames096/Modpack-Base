@@ -1,0 +1,10 @@
+{
+	id: "6D04A95F3DD0944A"
+	loot_size: 1
+	order_index: 12
+	rewards: [
+		{ count: 4, item: "gtceu:steel_ingot" }
+		{ count: 32, item: "gtceu:sulfur_dust" }
+	]
+	title: "&3Nether Quartz? Sharpness!"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "#minecraft:cave_vines",
+    "value": 0.75
+  },
+  {
+    "id": "#minecraft:sweet_berry_bush",
+    "value": 0.5
+  },
+  {
+    "id": "#minecraft:saplings",
+    "value": 0.20000000298023224
+  }
+]

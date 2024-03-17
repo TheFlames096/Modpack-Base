@@ -1,0 +1,114 @@
+[
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 7,
+    "item_result": "minecraft:book",
+    "item_result_count": 1,
+    "enchant_randomly": {
+      "min_levels": 10,
+      "max_levels": 18,
+      "treasure": false
+    },
+    "max_uses": 1,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 3,
+    "item_result": "minecraft:book",
+    "item_result_count": 1,
+    "enchant_randomly": {
+      "min_levels": 4,
+      "max_levels": 8,
+      "treasure": false
+    },
+    "max_uses": 1,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 1,
+    "item_result": "minecraft:gunpowder",
+    "item_result_count": 4,
+    "max_uses": 3,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 1,
+    "item_result": "minecraft:lily_pad",
+    "item_result_count": 5,
+    "max_uses": 2,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 1,
+    "item_result": "minecraft:packed_ice",
+    "item_result_count": 1,
+    "max_uses": 6,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 3,
+    "item_result": "minecraft:experience_bottle",
+    "item_result_count": 1,
+    "max_uses": 8,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 8,
+    "item_result": "minecraft:map",
+    "item_result_count": 1,
+    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.desert_pyramid\"}\u0027}}",
+    "exploration_map": {
+      "destination": "iguanatweaksreborn:desert_pyramid",
+      "skip_existing_chunks": false
+    },
+    "max_uses": 1,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 8,
+    "item_result": "minecraft:map",
+    "item_result_count": 1,
+    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.igloo\"}\u0027}}",
+    "exploration_map": {
+      "destination": "iguanatweaksreborn:igloo",
+      "skip_existing_chunks": false
+    },
+    "max_uses": 1,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 8,
+    "item_result": "minecraft:map",
+    "item_result_count": 1,
+    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.mansion\"}\u0027}}",
+    "exploration_map": {
+      "destination": "minecraft:on_woodland_explorer_maps",
+      "search_radius": 100,
+      "skip_existing_chunks": false
+    },
+    "max_uses": 1,
+    "xp": 0
+  },
+  {
+    "item_a": "minecraft:emerald",
+    "item_a_count": 8,
+    "item_result": "minecraft:map",
+    "item_result_count": 1,
+    "item_result_tag": "{display:{Name:\u0027{\"translate\":\"filled_map.monument\"}\u0027}}",
+    "exploration_map": {
+      "destination": "minecraft:on_ocean_explorer_maps",
+      "decoration": "monument",
+      "skip_existing_chunks": false
+    },
+    "max_uses": 1,
+    "xp": 0
+  }
+]

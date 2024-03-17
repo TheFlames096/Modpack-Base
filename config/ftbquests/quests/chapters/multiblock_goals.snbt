@@ -1,0 +1,307 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "multiblock_goals"
+	group: "654621B6554AB49A"
+	icon: "gtceu:electric_blast_furnace"
+	id: "74E0D5EC816BDCE8"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4EBED4D636B069BC"]
+			description: [
+				"You need steel? Uhh... fine. Let's get busy..."
+				""
+				"The Bricked Blast Furnace (BBF) can share walls with other ones, just like most GT multiblocks."
+				""
+				"If you are short on Stone Dust, you can get more by macerating cobblestone."
+				""
+				"If you spawn near a biome with Hardened Clay you can macerate it to get the clay dust you need. You can also use brick blocks from Villages to get brick dust in the macerator."
+				""
+				"Crafting the Worktable from Forestry can make it easier as you can use all the buckets for crafting in one click."
+			]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "0C1E97E01BA4D547"
+			rewards: [
+				{
+					count: 32
+					id: "602F446C01C21E89"
+					item: "gtceu:coke_gem"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1C27D3AA49F9F01D"
+					table_id: 1238862447550946191L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "14E2B41EBF191EA2"
+					table_id: 1238862447550946191L
+					type: "random"
+				}
+				{
+					count: 50
+					id: "62BA876F8BB1AE0F"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [
+				{
+					count: 576L
+					id: "1B7584BCD7DB332B"
+					item: "minecraft:clay_ball"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "11820778CCED8B1B"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:cobblestone"
+						}
+					}
+					optional_task: true
+					title: "Any #forge:cobblestone"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "3F8AA4904D13A597"
+					item: "minecraft:flint"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "46D837F468BF5C35"
+					item: "gtceu:iron_plate"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "25659D792B2E6BF6"
+					item: "minecraft:furnace"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "653B5557F5F24818"
+					item: "minecraft:blast_furnace"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 72L
+					id: "38BCC6DDC9E4DBB4"
+					item: "gtceu:calcite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 144L
+					id: "4F1754DB4E706722"
+					item: "gtceu:clay_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "176242B80A230B09"
+					item: "gtceu:stone_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "5A0A60BFC7358FE2"
+					item: "gtceu:quartz_sand_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 108L
+					id: "577E6B268BBC55B0"
+					item: { Count: 10b, id: "gtceu:brick_dust" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 216L
+					id: "40078630B2AF8C2F"
+					item: "gtceu:fireclay_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 216L
+					id: "6B7D3BAF81DBEEF3"
+					item: "gtceu:compressed_fireclay"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 216L
+					id: "31D7D2B49F32EF46"
+					item: "gtceu:firebrick"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "224777A5C398B167"
+					item: { Count: 36b, id: "gtceu:firebricks" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "58E8C5EA2656714F"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+			]
+			title: "&6Time to Get Some Steel"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17E4B74FAA1C8192"]
+			description: [
+				"Finite water is a problem. But fear not, there are solutions! I shall guide you to a steady supply of water. The Railcraft water siding tanks provides enough water to last the early game."
+				""
+				"The humidity of a biome is very important and will increase the base fill rate. If it is raining, the tank will fill much quicker. One block of the water siding tank must see sky for the maximum output. The best part is that you don't need a pump to extract water. Tanks and pipes placed next to it will be autofilled by the water siding tank."
+			]
+			icon: "railcraft:water_tank_siding"
+			id: "32E8FCE0DA844F6A"
+			rewards: [
+				{
+					count: 10
+					id: "39E6257B12CBDE81"
+					item: "gtceu:wood_small_fluid_pipe"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F8CBF0925473DEC"
+					table_id: 1238862447550946191L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4C0A96935A29F060"
+					table_id: 1238862447550946191L
+					type: "random"
+				}
+				{
+					count: 50
+					id: "633795DF24977537"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "194B959E0A48FD7E"
+					item: "gtceu:rubber_sapling"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "55DD788B27023602"
+					item: { Count: 26b, id: "gtceu:sticky_resin" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 52L
+					id: "7FAE915421790E15"
+					item: { Count: 52b, id: "gtceu:iron_rod" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 130L
+					id: "25D2804CD3D875DD"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					optional_task: true
+					title: "Any #minecraft:planks"
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "37440B5A7F658F1E"
+					item: "railcraft:water_tank_siding"
+					type: "item"
+				}
+			]
+			title: "&6The Water Dilemma"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["32E8FCE0DA844F6A"]
+			description: ["After entering the HV age you've found a way of making a water pump which solves the finite water problem. "]
+			icon: "gtceu:primitive_pump"
+			id: "4F3C700B7603624E"
+			rewards: [
+				{
+					count: 8
+					id: "1597ED9407D24153"
+					item: "gtceu:stainless_steel_normal_fluid_pipe"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "177AC3AA84FCCE19"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "55B5BBE3AD696F7A"
+					item: "gtceu:primitive_pump"
+					type: "item"
+				}
+				{
+					id: "0716CD338D87EB0A"
+					item: "gtceu:pump_hatch"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "7B6266B12C5ABB00"
+					item: { Count: 10b, id: "gtceu:pump_deck" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "7563E48E34D0985E"
+					item: { Count: 11b, id: "gtceu:treated_wood_frame" }
+					type: "item"
+				}
+			]
+			title: "&6The 'Water Problems' Are Solved"
+			x: 2.5d
+			y: 0.5d
+		}
+	]
+	title: "&6Multiblock Goals"
+}
