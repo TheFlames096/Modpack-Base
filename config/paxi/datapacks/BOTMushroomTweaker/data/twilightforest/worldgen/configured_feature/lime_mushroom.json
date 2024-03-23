@@ -1,0 +1,11 @@
+{
+  "type": "twilightforest:underground_plants",
+  "config": {
+    "state": {
+      "Name": "botania:lime_mushroom",
+      "Properties": {
+        "waterlogged": "false"
+      }
+    }
+  }
+}

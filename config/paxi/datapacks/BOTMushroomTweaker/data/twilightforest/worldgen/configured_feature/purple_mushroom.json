@@ -1,0 +1,11 @@
+{
+  "type": "twilightforest:underground_plants",
+  "config": {
+    "state": {
+      "Name": "botania:purple_mushroom",
+      "Properties": {
+        "waterlogged": "false"
+      }
+    }
+  }
+}

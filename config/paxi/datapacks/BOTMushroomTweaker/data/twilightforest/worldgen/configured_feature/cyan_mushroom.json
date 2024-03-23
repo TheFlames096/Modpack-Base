@@ -1,0 +1,11 @@
+{
+  "type": "twilightforest:underground_plants",
+  "config": {
+    "state": {
+      "Name": "botania:cyan_mushroom",
+      "Properties": {
+        "waterlogged": "false"
+      }
+    }
+  }
+}
