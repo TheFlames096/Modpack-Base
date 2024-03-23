@@ -1,5 +1,5 @@
 WorldgenEvents.remove(event => {
     event.removeOres(ore => {
-        ore.blocks=/^(?!gtceu)/
+        ore.blocks=/^(?!(gtceu|twilightforest|botania))/
     })
 })
