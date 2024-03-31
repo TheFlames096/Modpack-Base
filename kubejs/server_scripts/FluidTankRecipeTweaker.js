@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
         G:"#forge:glass_panes"
     })
     event.recipes.minecraft.crafting_shaped(
-        "fluidtank:steel", ['SPS', 'GTG', 'hPs'], {
+        "fluidtank:tank_stone", ['SPS', 'GTG', 'hPs'], {
         S: "#forge:screws/steel",
         P: "#forge:double_plates/steel",
         h: "#forge:tools/hammers",
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
         G:"#forge:glass_panes"
     })
     event.recipes.minecraft.crafting_shaped(
-        "fluidtank:aluminum", ['SPS', 'GTG', 'hPs'], {
+        "fluidtank:tank_emerald", ['SPS', 'GTG', 'hPs'], {
         S: "#forge:screws/aluminium",
         P: "#forge:double_plates/aluminium",
         h: "#forge:tools/hammers",
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
         G:"#forge:glass_panes"
     })
     event.recipes.minecraft.crafting_shaped(
-        "fluidtank:stainless_steel", ['SPS', 'GTG', 'hPs'], {
+        "fluidtank:tank_tin", ['SPS', 'GTG', 'hPs'], {
         S: "#forge:screws/stainless_steel",
         P: "#forge:double_plates/stainless_steel",
         h: "#forge:tools/hammers",
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
         G:"#forge:glass_panes"
     })
     event.recipes.minecraft.crafting_shaped(
-        "fluidtank:titanium", ['SPS', 'GTG', 'hPs'], {
+        "fluidtank:tank_bronze", ['SPS', 'GTG', 'hPs'], {
         S: "#forge:screws/titanium",
         P: "#forge:double_plates/titanium",
         h: "#forge:tools/hammers",
@@ -97,7 +97,7 @@ ServerEvents.recipes(event => {
         G:"#forge:glass_panes"
     })
     event.recipes.minecraft.crafting_shaped(
-        "fluidtank:tungstensteel", ['SPS', 'GTG', 'hPs'], {
+        "fluidtank:tank_lead", ['SPS', 'GTG', 'hPs'], {
         S: "#forge:screws/tungsten_steel",
         P: "#forge:double_plates/tungsten_steel",
         h: "#forge:tools/hammers",
@@ -111,11 +111,11 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("fluidtank:tank_copper").circuit(4).EUt(30).duration(300).itemInputs(["fluidtank:tank_wood", "#forge:double_plates/copper"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:tank_copper")
     event.recipes.gtceu.assembler("fluidtank:tank_iron").circuit(4).EUt(30).duration(400).itemInputs(["fluidtank:tank_wood", "#forge:double_plates/iron"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:tank_iron")
     event.recipes.gtceu.assembler("fluidtank:tank_silver").circuit(4).EUt(30).duration(400).itemInputs(["fluidtank:tank_wood", "#forge:double_plates/silver"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:tank_silver")
-    event.recipes.gtceu.assembler("fluidtank:tank_steel").circuit(4).EUt(30).duration(500).itemInputs(["fluidtank:tank_wood", "#forge:double_plates/steel"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:steel")
+    event.recipes.gtceu.assembler("fluidtank:tank_steel").circuit(4).EUt(30).duration(500).itemInputs(["fluidtank:tank_wood", "#forge:double_plates/steel"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:tank_stone")
     event.recipes.gtceu.assembler("fluidtank:tank_gold").circuit(4).EUt(30).duration(600).itemInputs(["fluidtank:tank_wood", "#forge:double_plates/gold"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:tank_gold")
     event.recipes.gtceu.assembler("fluidtank:tank_diamond").circuit(4).EUt(30).duration(800).itemInputs(["fluidtank:tank_wood", "#forge:plates/diamond"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:tank_diamond")
-    event.recipes.gtceu.assembler("fluidtank:tank_aluminum").circuit(4).EUt(30).duration(1000).itemInputs(["fluidtank:tank_wood", "#forge:double_plates/aluminium"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:aluminum")
-    event.recipes.gtceu.assembler("fluidtank:tank_stainless_steel").circuit(4).EUt(30).duration(1100).itemInputs(["fluidtank:tank_wood", "#forge:double_plates/stainless_steel"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:stainless_steel")
-    event.recipes.gtceu.assembler("fluidtank:tank_titanium").circuit(4).EUt(30).duration(1200).itemInputs(["fluidtank:tank_wood", "#forge:double_plates/titanium"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:titanium")
-    event.recipes.gtceu.assembler("fluidtank:tank_tungstensteel").circuit(4).EUt(30).duration(1300).itemInputs(["fluidtank:tank_wood", "#forge:double_plates/tungsten_steel"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:tungstensteel")
+    event.recipes.gtceu.assembler("fluidtank:tank_aluminum").circuit(4).EUt(30).duration(1000).itemInputs(["fluidtank:tank_wood", "#forge:double_plates/aluminium"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:tank_emerald")
+    event.recipes.gtceu.assembler("fluidtank:tank_stainless_steel").circuit(4).EUt(30).duration(1100).itemInputs(["fluidtank:tank_wood", "#forge:double_plates/stainless_steel"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:tank_tin")
+    event.recipes.gtceu.assembler("fluidtank:tank_titanium").circuit(4).EUt(30).duration(1200).itemInputs(["fluidtank:tank_wood", "#forge:double_plates/titanium"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:tank_bronze")
+    event.recipes.gtceu.assembler("fluidtank:tank_tungstensteel").circuit(4).EUt(30).duration(1300).itemInputs(["fluidtank:tank_wood", "#forge:double_plates/tungsten_steel"]).inputFluids(Fluid.of('gtceu:glass', 144)).itemOutputs("fluidtank:tank_lead")
 })

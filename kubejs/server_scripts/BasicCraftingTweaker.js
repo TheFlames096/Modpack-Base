@@ -58,18 +58,19 @@ ServerEvents.recipes(event => {
     event.remove({ output: "#railcraft:strengthened_glass" })
     event.remove({ output: "#minecraft:beds" })
     event.remove({ output: "minecraft:piston" })
+    event.remove({ output: "#forge:mushrooms",mod: 'botania' })
     event.remove({ type: "minecraft:crafting_shaped", output: "#minecraft:slabs" })
     event.remove({ type: "minecraft:crafting_shaped", output: "#minecraft:doors" })
     event.remove({ type: "minecraft:crafting_shaped", output: "#minecraft:trapdoors" })
-    Color.forEach(color =>{
-        event.recipes.minecraft.crafting_shaped("minecraft:"+color+"_bed", ['CCC', 'PPP', 'FSF'], {
-            C: "minecraft:"+color+"_carpet",
+    Color.forEach(color => {
+        event.recipes.minecraft.crafting_shaped("minecraft:" + color + "_bed", ['CCC', 'PPP', 'FSF'], {
+            C: "minecraft:" + color + "_carpet",
             P: "#minecraft:planks",
             F: "#minecraft:fences",
             S: "#forge:tools/mallets"
         })
-        event.recipes.minecraft.crafting_shapeless("minecraft:"+color+"_bed",["#minecraft:beds",color+'_dye'])
-        event.recipes.gtceu.chemical_bath(color+'_strengthen_glass_dyed').EUt(30).duration(10).itemInputs("#railcraft:strengthened_glass").inputFluids(Fluid.of("gtceu:"+color+"_dye",36)).itemOutputs("railcraft:"+color+"_strengthened_glass")
+        event.recipes.minecraft.crafting_shapeless("minecraft:" + color + "_bed", ["#minecraft:beds", color + '_dye'])
+        event.recipes.gtceu.chemical_bath(color + '_strengthen_glass_dyed').EUt(30).duration(10).itemInputs("#railcraft:strengthened_glass").inputFluids(Fluid.of("gtceu:" + color + "_dye", 36)).itemOutputs("railcraft:" + color + "_strengthened_glass")
     }
     )
     event.replaceInput([{ id: "gtceu:shaped/steam_boiler_lava_bronze" }, { id: "gtceu:shaped/steam_boiler_lava_steel" }], "minecraft:glass", "fluidtank:tank_wood")
@@ -108,7 +109,7 @@ ServerEvents.recipes(event => {
         s: "#forge:tools/screwdrivers"
     })
 
-    
+
 
     let slabs = Ingredient.of('#minecraft:slabs').getItemIds()
 
@@ -223,7 +224,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({}, "minecraft:water_bucket", { "type": "bucketlib:fluid", "tag": "minecraft:water" })
     event.replaceInput([{ id: "gtceu:shaped/steam_boiler_coal_bronze" }, { id: "gtceu:shaped/steam_boiler_coal_steel" }], "minecraft:furnace", "minecraft:blast_furnace")
 
-    
+
     event.recipes.minecraft.crafting_shaped("ceramicbucket:unfired_clay_bucket", ['C C', 'CCC'], {
         C: "#forge:dusts/clay"
     })
@@ -243,7 +244,7 @@ ServerEvents.recipes(event => {
     event.recipes.minecraft.crafting_shapeless("gtceu:wood_dust", ["#minecraft:logs", "#forge:tools/mortars"])
     event.recipes.minecraft.crafting_shapeless("kubejs:unfired_clay_brick", ["minecraft:clay_ball", "gtceu:brick_wooden_form"])
     event.recipes.minecraft.smelting("minecraft:brick", "kubejs:unfired_clay_brick")
-    event.recipes.minecraft.crafting_shaped("minecraft:bricks", ['CCC', 'CBC', 'CCC'], {
+    event.recipes.minecraft.crafting_shaped("2x minecraft:bricks", ['CCC', 'CBC', 'CCC'], {
         C: "minecraft:brick",
         B: { "type": "bucketlib:fluid", "tag": "minecraft:water" }
     })
@@ -252,7 +253,7 @@ ServerEvents.recipes(event => {
         B: { "type": "bucketlib:fluid", "tag": "minecraft:water" }
     })
 
-    event.recipes.minecraft.crafting_shaped("minecraft:nether_bricks", ['CCC', 'CBC', 'CCC'], {
+    event.recipes.minecraft.crafting_shaped("2x minecraft:nether_bricks", ['CCC', 'CBC', 'CCC'], {
         C: "minecraft:nether_brick",
         B: { "type": "bucketlib:fluid", "fluid": "minecraft:lava" }
     })
@@ -269,6 +270,7 @@ ServerEvents.recipes(event => {
     })
     event.recipes.gtceu.assembler('minecraft:blast_furnace').EUt(30).duration(300).itemInputs('5x #forge:plates/iron').itemInputs('minecraft:furnace').itemOutputs("minecraft:blast_furnace")
 
+    event.recipes.minecraft.crafting_shapeless("8x gtceu:cobalt_brass_dust",["7x #forge:dusts/brass","#forge:dusts/aluminium","#forge:dusts/cobalt"])
 
 })
 ServerEvents.tags("block", event => {

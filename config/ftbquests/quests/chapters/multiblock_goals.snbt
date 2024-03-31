@@ -33,13 +33,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "1C27D3AA49F9F01D"
-					table_id: 1238862447550946191L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "14E2B41EBF191EA2"
-					table_id: 1238862447550946191L
 					type: "random"
 				}
 				{
@@ -193,13 +191,11 @@
 				{
 					exclude_from_claim_all: true
 					id: "7F8CBF0925473DEC"
-					table_id: 1238862447550946191L
 					type: "random"
 				}
 				{
 					exclude_from_claim_all: true
 					id: "4C0A96935A29F060"
-					table_id: 1238862447550946191L
 					type: "random"
 				}
 				{

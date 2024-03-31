@@ -1,7 +1,7 @@
 {
 	id: "6A49BE0B993AEF11"
 	loot_size: 1
-	order_index: 13
+	order_index: 10
 	rewards: [
 		{ count: 8, item: "gtceu:bronze_ingot" }
 		{ count: 4, item: "gtceu:steel_ingot" }

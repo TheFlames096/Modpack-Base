@@ -23,9 +23,9 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | getInput |  |  | String | ✘ |
 | getException |  |  | Throwable | ✘ |
 | setException | Throwable |  | void | ✘ |
-| getCommandName |  |  | String | ✘ |
 | setParseResults | ParseResults<CommandSourceStack> |  | void | ✘ |
 | getParseResults |  |  | ParseResults<CommandSourceStack> | ✘ |
+| getCommandName |  |  | String | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |

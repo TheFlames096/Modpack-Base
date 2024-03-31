@@ -47,12 +47,13 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["2F6F7C7A5863F920"]
 			description: [
 				"In order to proceed forward, you need to get aluminium. A lot of it. But for now, 8 is enough to complete this quest."
 				""
 				"Your first option is alumina dust. Probably the best source for alumina is clay or hardened clay from canyons, however you need an MV machine for that, so you need to find an alternative until you have enough dust for your initial setup. For now, you can get it by centrifuging various impure piles from your ores or by smelting ruby, sapphire, or green sapphire in an EBF with carbon. Check the EBF quest in the Multiblock Goals."
 				""
-				"You will also need an EBF to turn the alumina into aluminium ingots. For that you need cryolite. Go visit the Twilight Forest for that and find a Galena vein. The related quest is \"Lead, Galena, Silver and Cryolite\" is the Novice Thaumaturgy tab."
+				"You will also need an EBF to turn the alumina into aluminium ingots. For that you need cryolite. Go visit the Twilight Forest for that and find a Galena vein. The related quest is \"Lead, Galena, Silver and Cryolite\" in the Road into Twilight tab."
 				""
 				"Your second option is to use aluminium dust. However, you can not smelt that directly yet, even if you have an EBF. That will require higher heat levels. For now, you will have to either use a Tinker's Smeltery or a GT Compressor to turn the dust into raw aluminium which you can then smelt into ingots in the EBF. Check out the Tier 0 quest for some options to obtain the dust. "
 				""
@@ -60,10 +61,540 @@
 				""
 				"You might also want to check the Getting Around and Without Dying tabs for new unlocks."
 			]
+			icon: "gtceu:aluminium_ingot"
 			id: "59BDD1D58C1CA33D"
+			shape: "octagon"
+			size: 3.0d
+			tasks: [
+				{
+					count: 20L
+					id: "5220B27E08FF29A3"
+					item: { Count: 20b, id: "gtceu:alumina_dust" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "4D3B6F017686ED86"
+					item: "gtceu:cryolite_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "382DE0ABD3B665B2"
+					item: { Count: 8b, id: "kubejs:cast_aluminium" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6BEF648D366EA628"
+					item: { Count: 8b, id: "gtceu:aluminium_ingot" }
+					type: "item"
+				}
+			]
 			title: "&5Getting Ready for Tier 2, MV"
-			x: -0.5d
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2F6F7C7A5863F920"]
+			description: ["It's, like, faster than a normal one I guess? But uses power."]
+			id: "38DBD17ED3D50374"
+			rewards: [
+				{
+					id: "2EABC37BF7561061"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 15
+					id: "51EDB9251B289745"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "25E345CDC1B49A5F"
+				item: "gtceu:lv_electric_furnace"
+				type: "item"
+			}]
+			title: "&5Electric Furnace"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2F6F7C7A5863F920"]
+			description: ["Upgrade your steam alloy smelter to an LV one."]
+			id: "042C4D779B28B8F1"
+			rewards: [
+				{
+					count: 3
+					id: "6DEEF6BDC3A75932"
+					item: "moredelight:cooked_rice_with_milk_cream_and_beef"
+					type: "item"
+				}
+				{
+					count: 15
+					id: "058497C175E341B0"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "34D7F2898AD986AF"
+				item: "gtceu:lv_alloy_smelter"
+				type: "item"
+			}]
+			title: "&5Alloy Smelter"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2F6F7C7A5863F920"]
+			description: ["Tired of using 4 redstone for 1 magnetic iron rod? Well, good news for you! The polarizer doesn't need redstone, just a little bit of power. You don't need to attach this machine to a permanent power source, it runs fine on battery power, since it uses so little."]
+			id: "6C69A4BB24DC2F61"
+			rewards: [
+				{
+					id: "261861253707B97E"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "474D4BBFC99F9326"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "23C135457F13CCD9"
+				item: "gtceu:lv_polarizer"
+				type: "item"
+			}]
+			title: "&5Saving Redstone"
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2F6F7C7A5863F920"]
+			description: ["After the Bending Machine, this should be your next step. You get 2 wires for every ingot. You can run them back through to get 4 fine wires each if you want those."]
+			id: "3B7D38280D89B572"
+			rewards: [
+				{
+					id: "39899E3B4CAF58AB"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6B94A06C5EBA0864"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "2FA30EF66293BBD5"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			title: "&5Damn You, Wire Cutter!"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6C69A4BB24DC2F61"]
+			description: ["Magnetic steel rods will oneedr a polariser to craft. You'll need them later on for MV Motors and MV hatches."]
+			icon: "gtceu:magnetic_steel_rod"
+			id: "1426412253F01E9D"
+			rewards: [
+				{
+					count: 8
+					id: "5F40BEFFCED5CFB3"
+					item: "gtceu:fluid_cell"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5FA12631F49323A5"
+					item: "minecraft:lever"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "640C1F6D5C5C7A1D"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "0EFED57EF04BC4A1"
+					item: { Count: 16b, id: "gtceu:steel_rod" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "611582BB96840285"
+					item: { Count: 16b, id: "gtceu:magnetic_steel_rod" }
+					type: "item"
+				}
+			]
+			title: "&5Magnetize Your Rods"
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2F6F7C7A5863F920"]
+			description: [
+				"The mixer is a very useful device. You can mix all kinds of fluids and items. Useful to prevent dust from falling to the ground when crafting - most mixer recipes give a slight boost over hand crafting!"
+				""
+				"You can use the battery slot and other extra slots in the GUI to store anything you like!"
+			]
+			id: "44053FDEB96BD1F5"
+			rewards: [
+				{
+					id: "1103BC62315E4034"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 15
+					id: "0E9031D0EB650D8A"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "503A4BD91EE464EA"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			title: "&5Hey DJ, Mix it!"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F6F7C7A5863F920"]
+			description: [
+				"The first item you'll need a lot of. If you want to pull items out of chests or barrels you'll need one. "
+				""
+				"It works well with item pipes or GT machines, adjust with a screwdriver."
+			]
+			id: "1ACB2E07207A2B31"
+			rewards: [
+				{
+					id: "7179D2AEFDEE5C37"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "03A912BE27FADD98"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "21F3208A65988231"
+					item: "gtceu:rubber_plate"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "5D207BFB8A56970D"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			title: "&5You're Gonna Hate This #1"
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F6F7C7A5863F920"]
+			description: ["A piston, but more... \"electrical\". The third item you're going to craft a lot of in the future."]
+			id: "3FE0B49D8B148EA5"
+			rewards: [
+				{
+					id: "19659773155B2801"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0EADC051EEEA5BA6"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2D8099C40BA0C630"
+					item: "minecraft:piston"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "24A152BF4585255E"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			title: "&5You're Gonna Hate This #3"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3FE0B49D8B148EA5"]
+			description: [
+				"Instead of a 3:2 ratio of ingots to plates, this machine allows for 1:1. This saves an enormous amount of metal, so make it ASAP."
+				""
+				"BTW if you want foils, just run the plate back through. There's other circuit modes, but you can discover them later."
+			]
+			id: "2E4A3426B7B08A51"
+			rewards: [
+				{
+					id: "3C1F47416F512064"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "59E12F4B6D524687"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "6EA4DB409D6984CC"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			title: "&5Saving Metal With Bending"
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2E4A3426B7B08A51"]
+			description: ["With your plate bender you're able to make empty cells. The circuit needs to be configured to 12 otherwise you will make foils. Once you have an LV Extruder, you can make cells directly from ingots."]
+			icon: "gtceu:fluid_cell"
+			id: "11E764601E3F5E1D"
+			rewards: [
+				{
+					count: 16
+					id: "1362AE3DF3A6B3CF"
+					item: "gtceu:rubber_ingot"
+					type: "item"
+				}
+				{
+					count: 15
+					id: "236C1E407BC01B56"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "135CA794966CC227"
+					item: { Count: 32b, id: "gtceu:tin_plate" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6378B798E989C81B"
+					item: { Count: 16b, id: "gtceu:fluid_cell" }
+					type: "item"
+				}
+			]
+			title: "&5Empty Cells"
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2E4A3426B7B08A51"]
+			description: [
+				"How about large steel fluid cells instead? Each holds 8000L, and they can stack to 64. Unfortunately, you have to load and unload them using a machine's interface - like ULV tanks for example - but hey, 512 buckets in a single slot is pretty good!"
+				""
+				"You cannot use these cells directly in the world, like BC tanks, or to dump the fluid on the ground."
+			]
+			id: "61330E70EC999FE3"
+			rewards: [
+				{
+					count: 4
+					id: "1827BA794DE0A493"
+					item: "gtceu:steel_fluid_cell"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "5DA319015028AD74"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "69EE9AFC811D64F2"
+				item: { Count: 4b, id: "gtceu:steel_fluid_cell" }
+				type: "item"
+			}]
+			title: "&5Portable Tanks Too Small?"
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2E4A3426B7B08A51"]
+			description: ["Why waste a full ingot to make a rod by using a tool which loses durability and takes even MORE ingots? With this little device, all your rod-needs shall be fulfilled (for now at least, the MV Extruder is the next step for rods)."]
+			id: "7F4BC6DDC9E68F1A"
+			rewards: [
+				{
+					id: "36403153B4C16822"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "3EB1B9001784AA87"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "0B282946E430597F"
+				item: "gtceu:lv_lathe"
+				type: "item"
+			}]
+			title: "&5No More Filing"
+			x: -11.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7F4BC6DDC9E68F1A"]
+			description: [
+				"If you want to cut diamond blocks into plates, it's time to get a new alloy, Cobalt Brass."
+				""
+				"First you need to make brass out of zinc (only found in small ores in the Overworld, in Nether Sphalerite, or as a centrifuge byproduct from tin or tetrahedrite) and copper. Mix it with aluminium and cobalt dust (you can get it as a byproduct of a couple ores, go searching in the nether, or go to the Twilight Forest for Cobaltite) to get the cobalt brass dust."
+				""
+				"Now that you've come this far, we think that you're able to look up the ores that you need by yourself with the help of JEI."
+			]
+			icon: "gtceu:cobalt_brass_ingot"
+			id: "57666841BABE5CFD"
+			rewards: [
+				{
+					id: "648F10C9D5FE5110"
+					item: "simplefarming:cheeseburger"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6AA3EBDA794EB77D"
+					item: "kubejs:coin_smith_10"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "73438C4190D76B47"
+					item: "kubejs:coin_chemist_10"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "57592F3E70992BAB"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 9L
+					id: "16F2E0515AE1DAE7"
+					item: { Count: 9b, id: "gtceu:copper_dust" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "561AD708B401BB37"
+					item: { Count: 3b, id: "gtceu:zinc_dust" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "630F3C0CA734EBC9"
+					item: { Count: 9b, id: "gtceu:brass_dust" }
+					type: "item"
+				}
+				{
+					id: "14DDE5E7683B4848"
+					item: "gtceu:aluminium_dust"
+					type: "item"
+				}
+				{
+					id: "387F037B0433450D"
+					item: "gtceu:cobalt_dust"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "305CBAB404EC025D"
+					item: { Count: 8b, id: "gtceu:cobalt_brass_dust" }
+					type: "item"
+				}
+			]
+			title: "&5A New Alloy - Cobalt Brass"
+			x: -11.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["57666841BABE5CFD"]
+			description: [
+				"Grind your cobalt brass gear to makes a really sharp saw blade for your cutting machine."
+				""
+				"&3This is the only use for cobalt brass in the game. Pretty pointless, yeah?"
+			]
+			icon: "gtceu:cobalt_brass_buzz_saw_blade"
+			id: "30F3355FFB9A88B7"
+			rewards: [
+				{
+					count: 6
+					id: "3CE6A3E7AB9F6555"
+					item: "moredelight:toast_with_chocolate"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "429BF41D83FD8DB9"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7EF6BAA06CA254D5"
+					item: "gtceu:cobalt_brass_gear"
+					type: "item"
+				}
+				{
+					id: "4344852CC026F1A3"
+					item: "gtceu:cobalt_brass_buzz_saw_blade"
+					type: "item"
+				}
+			]
+			title: "&5A Truly Sharp Saw Blade"
+			x: -11.0d
+			y: -3.5d
 		}
 	]
 	title: "&5Tier 1 - LV"

@@ -28,8 +28,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | getEntity |  |  | Entity | ✘ |
 | getOldPlayer |  |  | ServerPlayer | ✘ |
 | getKeepData |  |  | boolean | ✘ |
-| hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |
+| hasGameStage | String |  | boolean | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | removeGameStage | String |  | void | ✘ |
 | getLevel |  |  | Level | ✘ |
@@ -59,15 +59,6 @@ Gets the player that was before respawn. Note that this entity is already remove
 Gets whether the player's data was kept, e.g. when returning from the end.
 ```
 
-- `boolean hasGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
-```
-Checks if the player has the specified game stage
-```
-
 - `void addGameStage(String var0)`
 
   Parameters:
@@ -75,6 +66,15 @@ Checks if the player has the specified game stage
 
 ```
 Adds the specified game stage to the player
+```
+
+- `boolean hasGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Checks if the player has the specified game stage
 ```
 
 - `void removeGameStage(String var0)`

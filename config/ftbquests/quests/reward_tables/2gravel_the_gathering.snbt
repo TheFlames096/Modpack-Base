@@ -1,0 +1,11 @@
+{
+	id: "274C120E603E2768"
+	loot_size: 1
+	order_index: 14
+	rewards: [
+		{ count: 16, item: "minecraft:gravel" }
+		{ count: 3, item: "farmersdelight:barbecue_stick" }
+		{ item: "lootbag:loot_bag_stone" }
+	]
+	title: "&2Gravel: The Gathering"
+}

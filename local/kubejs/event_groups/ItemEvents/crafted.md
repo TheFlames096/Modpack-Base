@@ -24,10 +24,10 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
 | getItem |  |  | ItemStack | ✘ |
-| getEntity |  |  | LivingEntity | ✘ |
 | getInventory |  |  | InventoryKJS | ✘ |
-| hasGameStage | String |  | boolean | ✘ |
+| getEntity |  |  | Player | ✘ |
 | addGameStage | String |  | void | ✘ |
+| hasGameStage | String |  | boolean | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | removeGameStage | String |  | void | ✘ |
 | getLevel |  |  | Level | ✘ |
@@ -47,23 +47,14 @@ Note: Even if no fields are listed above, some methods are still available as fi
 The item that was crafted.
 ```
 
-- `LivingEntity getEntity()`
-```
-The player that crafted the item.
-```
-
 - `InventoryKJS getInventory()`
 ```
 The inventory that the item was crafted in.
 ```
 
-- `boolean hasGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
+- `Player getEntity()`
 ```
-Checks if the player has the specified game stage
+The player that crafted the item.
 ```
 
 - `void addGameStage(String var0)`
@@ -73,6 +64,15 @@ Checks if the player has the specified game stage
 
 ```
 Adds the specified game stage to the player
+```
+
+- `boolean hasGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Checks if the player has the specified game stage
 ```
 
 - `void removeGameStage(String var0)`

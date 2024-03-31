@@ -23,4 +23,5 @@ StartupEvents.registry('item', e => {
     e.create('hot_netherrack_brick')
     e.create('infernal_brick')
     e.create('twilight_forest_portal_catalyst')
+    e.create('cast_aluminium')
 })

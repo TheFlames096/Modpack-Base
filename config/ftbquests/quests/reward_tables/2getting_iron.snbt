@@ -1,0 +1,11 @@
+{
+	id: "48E9CFF74A36364D"
+	loot_size: 1
+	order_index: 11
+	rewards: [
+		{ count: 2, item: "minecraft:golden_carrot" }
+		{ count: 2, item: "minecraft:pumpkin_pie" }
+		{ item: "lootbag:loot_bag_stone" }
+	]
+	title: "&2Getting Iron"
+}

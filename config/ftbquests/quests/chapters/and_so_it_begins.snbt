@@ -227,14 +227,13 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "578F4C2F69AC7839"
-					table_id: 2808411397077784956L
-					type: "random"
-				}
-				{
 					id: "3746203911DB91C6"
 					item: "minecraft:cookie"
+					type: "item"
+				}
+				{
+					id: "4BDE70AEA68CF679"
+					item: "lootbag:loot_bag_stone"
 					type: "item"
 				}
 			]
@@ -422,7 +421,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "415E6B72C9B4C424"
-					table_id: 2808411397077784956L
 					type: "random"
 				}
 				{
@@ -626,7 +624,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "4130ED24C794E06B"
-					table_id: 2808411397077784956L
 					type: "random"
 				}
 				{
@@ -784,15 +781,14 @@
 			id: "46936F2F25053AC2"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "4E718BE42F4E22A5"
-					table_id: 2808411397077784956L
-					type: "random"
-				}
-				{
 					count: 5
 					id: "6EEE19F860EAC0AB"
 					item: "kubejs:coin_survivor_1"
+					type: "item"
+				}
+				{
+					id: "05779A40891F1854"
+					item: "lootbag:loot_bag_stone"
 					type: "item"
 				}
 			]
@@ -1016,15 +1012,14 @@
 			id: "2CD9B23A26B0F894"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "5BE5E856C84EA79C"
-					table_id: 2808411397077784956L
-					type: "random"
-				}
-				{
 					count: 5
 					id: "27382FEE7AB5051E"
 					item: "kubejs:coin_survivor_1"
+					type: "item"
+				}
+				{
+					id: "1CCAB1BF32774BDB"
+					item: "lootbag:loot_bag_stone"
 					type: "item"
 				}
 			]
@@ -1114,7 +1109,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "035FC07BEB511E0C"
-					table_id: 2808411397077784956L
 					type: "random"
 				}
 				{

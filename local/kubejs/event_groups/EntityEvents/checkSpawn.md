@@ -33,8 +33,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | getBlock |  |  | BlockContainerJS | ✘ |
 | getType |  |  | MobSpawnType | ✘ |
 | getLevel |  |  | Level | ✘ |
-| getEntity |  |  | Entity | ✘ |
 | getSpawner |  |  | BaseSpawner | ✘ |
+| getEntity |  |  | Entity | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |
@@ -62,14 +62,14 @@ The type of spawn.
 The level the entity is being spawned into.
 ```
 
-- `Entity getEntity()`
-```
-The entity being spawned.
-```
-
 - `BaseSpawner getSpawner()`
 ```
 The spawner that spawned the entity. Can be null if the entity was spawned by worldgen.
+```
+
+- `Entity getEntity()`
+```
+The entity being spawned.
 ```
 
 - `Object exit(Object var0)`

@@ -35,26 +35,26 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | remove | RecipeFilter |  | void | ✘ |
 | stage | RecipeFilter, String |  | void | ✘ |
-| takeId | RecipeJS, String, String |  | ResourceLocation | ✘ |
-| getRecipeFunction | String |  | RecipeTypeFunction | ✘ |
-| customFilter | Predicate<RecipeKJS> |  | RecipeFilter | ✘ |
-| findRecipeIds | RecipeFilter |  | Collection<ResourceLocation> | ✘ |
-| forEachRecipe | RecipeFilter, Consumer<RecipeJS> |  | void | ✘ |
-| recipeStream | RecipeFilter |  | Stream<RecipeJS> | ✘ |
-| containsRecipe | RecipeFilter |  | boolean | ✘ |
-| countRecipes | RecipeFilter |  | int | ✘ |
-| printAllTypes |  |  | void | ✘ |
-| setItemErrors | boolean |  | void | ✘ |
-| printExamples | String |  | void | ✘ |
-| addRecipe | RecipeJS, boolean |  | RecipeJS | ✘ |
-| replaceInput | RecipeFilter, ReplacementMatch, InputReplacement |  | void | ✘ |
-| replaceOutput | RecipeFilter, ReplacementMatch, OutputReplacement |  | void | ✘ |
-| getRecipes |  |  | Map<String, Object> | ✘ |
-| printTypes |  |  | void | ✘ |
-| custom | JsonObject |  | RecipeJS | ✘ |
-| findRecipes | RecipeFilter |  | Collection<RecipeJS> | ✘ |
 | runInParallel | Callable<T> |  | T | ✔ |
 | runInParallel | Runnable |  | void | ✔ |
+| findRecipes | RecipeFilter |  | Collection<RecipeJS> | ✘ |
+| takeId | RecipeJS, String, String |  | ResourceLocation | ✘ |
+| replaceOutput | RecipeFilter, ReplacementMatch, OutputReplacement |  | void | ✘ |
+| replaceInput | RecipeFilter, ReplacementMatch, InputReplacement |  | void | ✘ |
+| addRecipe | RecipeJS, boolean |  | RecipeJS | ✘ |
+| custom | JsonObject |  | RecipeJS | ✘ |
+| printTypes |  |  | void | ✘ |
+| getRecipes |  |  | Map<String, Object> | ✘ |
+| findRecipeIds | RecipeFilter |  | Collection<ResourceLocation> | ✘ |
+| printAllTypes |  |  | void | ✘ |
+| printExamples | String |  | void | ✘ |
+| setItemErrors | boolean |  | void | ✘ |
+| customFilter | Predicate<RecipeKJS> |  | RecipeFilter | ✘ |
+| recipeStream | RecipeFilter |  | Stream<RecipeJS> | ✘ |
+| countRecipes | RecipeFilter |  | int | ✘ |
+| forEachRecipe | RecipeFilter, Consumer<RecipeJS> |  | void | ✘ |
+| containsRecipe | RecipeFilter |  | boolean | ✘ |
+| getRecipeFunction | String |  | RecipeTypeFunction | ✘ |
 | exit | Object |  | Object | ✘ |
 | exit |  |  | Object | ✘ |
 | success | Object |  | Object | ✘ |

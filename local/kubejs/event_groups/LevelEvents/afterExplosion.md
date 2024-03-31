@@ -25,11 +25,11 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | getAffectedEntities |  |  | EntityArrayList | ✘ |
 | getAffectedBlocks |  |  | List<BlockContainerJS> | ✘ |
-| removeAllAffectedEntities |  |  | void | ✘ |
+| removeKnockback |  |  | void | ✘ |
 | removeAllAffectedBlocks |  |  | void | ✘ |
+| removeAllAffectedEntities |  |  | void | ✘ |
 | removeAffectedEntity | Entity |  | void | ✘ |
 | removeAffectedBlock | BlockContainerJS |  | void | ✘ |
-| removeKnockback |  |  | void | ✘ |
 | getPosition |  |  | Vec3 | ✘ |
 | getBlock |  |  | BlockContainerJS | ✘ |
 | getLevel |  |  | Level | ✘ |
@@ -58,14 +58,19 @@ Gets a list of all entities affected by the explosion.
 Gets a list of all blocks affected by the explosion.
 ```
 
-- `void removeAllAffectedEntities()`
+- `void removeKnockback()`
 ```
-Remove all entities from the list of affected entities.
+Remove all knockback from all affected *players*.
 ```
 
 - `void removeAllAffectedBlocks()`
 ```
 Remove all blocks from the list of affected blocks.
+```
+
+- `void removeAllAffectedEntities()`
+```
+Remove all entities from the list of affected entities.
 ```
 
 - `void removeAffectedEntity(Entity var0)`
@@ -84,11 +89,6 @@ Remove an entity from the list of affected entities.
 
 ```
 Remove a block from the list of affected blocks.
-```
-
-- `void removeKnockback()`
-```
-Remove all knockback from all affected *players*.
 ```
 
 - `Object exit(Object var0)`

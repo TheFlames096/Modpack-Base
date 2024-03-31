@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "road_into_light"
+	group: "391B995A287CA74A"
+	id: "0DE63D98ADB2AB23"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Road into Light"
+}

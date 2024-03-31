@@ -23,8 +23,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | getObject |  |  | QuestObject | ✘ |
 | getData |  |  | FTBQuestsKubeJSTeamDataWrapper | ✘ |
-| getNotifiedPlayers |  |  | EntityArrayList | ✘ |
 | getOnlineMembers |  |  | EntityArrayList | ✘ |
+| getNotifiedPlayers |  |  | EntityArrayList | ✘ |
 | getPlayer |  |  | ServerPlayer | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |

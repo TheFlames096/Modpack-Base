@@ -1,10 +1,10 @@
 {
 	id: "414B6F6B41786DDC"
 	loot_size: 1
-	order_index: 6
+	order_index: 4
 	rewards: [
 		{ count: 2, item: "ironchest:wood_to_iron_chest_upgrade" }
 		{ count: 8, item: "minecraft:iron_ingot" }
 	]
-	title: "iron chest"
+	title: "&2More Compact Storage"
 }

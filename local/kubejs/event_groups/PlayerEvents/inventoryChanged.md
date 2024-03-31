@@ -26,8 +26,8 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | getSlot |  |  | int | ✘ |
 | getItem |  |  | ItemStack | ✘ |
 | getEntity |  |  | Entity | ✘ |
-| hasGameStage | String |  | boolean | ✘ |
 | addGameStage | String |  | void | ✘ |
+| hasGameStage | String |  | boolean | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | removeGameStage | String |  | void | ✘ |
 | getLevel |  |  | Level | ✘ |
@@ -57,15 +57,6 @@ Gets the item that was changed.
 Gets the player that changed their inventory.
 ```
 
-- `boolean hasGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
-```
-Checks if the player has the specified game stage
-```
-
 - `void addGameStage(String var0)`
 
   Parameters:
@@ -73,6 +64,15 @@ Checks if the player has the specified game stage
 
 ```
 Adds the specified game stage to the player
+```
+
+- `boolean hasGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Checks if the player has the specified game stage
 ```
 
 - `void removeGameStage(String var0)`

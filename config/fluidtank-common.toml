@@ -24,22 +24,22 @@
 		#Default: 0 mB(= 0 unit)
 		invalid = "0"
 		#Capacity of Wood
-		#Default: 16000 mB(= 1296000 unit)
+		#Default: 4000 mB(= 324000 unit)
 		wood = "1296000"
 		#Capacity of Iron
-		#Default: 32000 mB(= 2592000 unit)
+		#Default: 256000 mB(= 20736000 unit)
 		iron = "2592000"
 		#Capacity of Gold
-		#Default: 48000 mB(= 3888000 unit)
+		#Default: 4096000 mB(= 331776000 unit)
 		gold = "3888000"
 		#Capacity of Diamond
-		#Default: 64000 mB(= 5184000 unit)
+		#Default: 16384000 mB(= 1327104000 unit)
 		diamond = "5184000"
 		#Capacity of Emerald
-		#Default: 96000 mB(= 7776000 unit)
+		#Default: 65536000 mB(= 5308416000 unit)
 		emerald = "7776000"
 		#Capacity of Star
-		#Default: 64000000 mB(= 5184000000 unit)
+		#Default: 1048576000 mB(= 84934656000 unit)
 		star = "5184000000"
 		#Capacity of Creative
 		#Default: 100000000000000000 mB(= 8100000000000000000 unit)
@@ -48,21 +48,21 @@
 		#Default: 0 mB(= 0 unit)
 		void = "0"
 		#Capacity of Copper
-		#Default: 24000 mB(= 1944000 unit)
+		#Default: 40000 mB(= 3240000 unit)
 		copper = "1944000"
 		#Capacity of Tin
-		#Default: 128000 mB(= 10368000 unit)
+		#Default: 48000 mB(= 3888000 unit)
 		tin = "10368000"
 		#Capacity of Stone
-		#Default: 48000 mB(= 3888000 unit)
+		#Default: 16000 mB(= 1296000 unit)
 		stone = "3888000"
 		#Capacity of Bronze
 		#Default: 256000 mB(= 20736000 unit)
 		bronze = "20736000"
 		#Capacity of Lead
-		#Default: 512000 mB(= 41472000 unit)
+		#Default: 192000 mB(= 15552000 unit)
 		lead = "41472000"
 		#Capacity of Silver
-		#Default: 40000 mB(= 3240000 unit)
+		#Default: 1024000 mB(= 82944000 unit)
 		silver = "3240000"
 

@@ -153,7 +153,6 @@
 				{
 					auto: "disabled"
 					id: "1AE73004CFCF4400"
-					table_id: 1238862447550946191L
 					type: "random"
 				}
 				{
@@ -212,7 +211,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "10E1C9D081FFC820"
-					table_id: 1238862447550946191L
 					type: "loot"
 				}
 			]
@@ -373,7 +371,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "025C822099863659"
-					table_id: 1238862447550946191L
 					type: "random"
 				}
 				{
@@ -1009,7 +1006,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "10615B6296DBDBAE"
-					table_id: 1238862447550946191L
 					type: "random"
 				}
 				{
@@ -1163,7 +1159,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "48EEC219C616C240"
-					table_id: 1238862447550946191L
 					type: "random"
 				}
 				{
@@ -1268,7 +1263,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "4D3B47E0E142BBD1"
-					table_id: 1238862447550946191L
 					type: "random"
 				}
 				{
@@ -1308,7 +1302,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "166EB1931CC16692"
-					table_id: 1238862447550946191L
 					type: "random"
 				}
 				{
@@ -1745,7 +1738,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "00CBB67C9AB8D96C"
-					table_id: 1238862447550946191L
 					type: "random"
 				}
 				{
@@ -1955,7 +1947,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "5A23FB85628CB4CF"
-					table_id: 1238862447550946191L
 					type: "random"
 				}
 				{
@@ -1992,7 +1983,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "3FC71B03DA436C04"
-					table_id: 1238862447550946191L
 					type: "random"
 				}
 				{

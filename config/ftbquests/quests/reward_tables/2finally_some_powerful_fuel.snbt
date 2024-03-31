@@ -1,0 +1,11 @@
+{
+	id: "3F470CC6ED5D8811"
+	loot_size: 1
+	order_index: 13
+	rewards: [
+		{ count: 5, item: "aquaculturedelight:cooked_small_turtle_meat" }
+		{ item: "minecraft:bucket" }
+		{ item: "lootbag:loot_bag_stone" }
+	]
+	title: "&2Finally, Some Powerful Fuel"
+}

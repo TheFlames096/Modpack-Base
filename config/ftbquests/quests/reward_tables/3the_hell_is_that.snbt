@@ -1,7 +1,7 @@
 {
 	id: "4809B7A40916AEFB"
 	loot_size: 1
-	order_index: 11
+	order_index: 8
 	rewards: [
 		{ count: 2, item: "minecraft:piston" }
 		{ count: 2, item: "minecraft:sticky_piston" }

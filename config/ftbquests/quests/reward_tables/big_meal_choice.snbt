@@ -1,11 +1,11 @@
 {
 	id: "03855C5DD423DCF7"
 	loot_size: 1
-	order_index: 8
+	order_index: 6
 	rewards: [
 		{ count: 4, item: "farmersdelight:fried_rice" }
 		{ count: 4, item: "farmersdelight:chicken_soup" }
 		{ count: 4, item: "aquaculturedelight:tuna_spaghetti" }
 	]
-	title: "big meal choice"
+	title: "&2A Better Lunch Bag"
 }

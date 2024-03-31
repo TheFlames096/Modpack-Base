@@ -87,7 +87,6 @@
 				}
 				{
 					id: "6CAFD606459AC24F"
-					table_id: 2808411397077784956L
 					title: "LootBag (Basic Stone Age)"
 					type: "random"
 				}
@@ -154,7 +153,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "37E4A756535D5736"
-					table_id: 2808411397077784956L
 					type: "random"
 				}
 				{
@@ -232,10 +230,8 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					icon: { Count: 4b, id: "farmersdelight:sweet_berry_cookie" }
 					id: "5DF4D1A9BDBAB443"
 					table_id: 3056090701725941106L
-					title: "Cookies"
 					type: "choice"
 				}
 				{
@@ -437,25 +433,12 @@
 			dependencies: ["406B84753C2CF8EB"]
 			description: ["Now that you have a coke oven, you can start producing charcoal. The more, the better. Don't worry about the creosote. I have another deal for you..."]
 			id: "3834A035016F3AF6"
-			rewards: [
-				{
-					id: "5B4A80314E22EE41"
-					item: "minecraft:bucket"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "14A9C42BA3491586"
-					item: "aquaculturedelight:cooked_small_turtle_meat"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "3AB5925B3DCF99B0"
-					table_id: 2808411397077784956L
-					type: "random"
-				}
-			]
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6215EFE8C70254D2"
+				table_id: 4559627196261304337L
+				type: "choice"
+			}]
 			shape: "square"
 			size: 2.0d
 			tasks: [{
@@ -536,7 +519,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "2808A587B330B125"
-					table_id: 2808411397077784956L
 					type: "random"
 				}
 			]
@@ -558,7 +540,7 @@
 			description: [
 				"GregTech ore generation is based on veins."
 				""
-				"In GregTech Modern, veins are based on a circle shape and spawned randomly. Mostly there will be veins beneath the small stone piles, which may help to locate the veins."
+				"In GregTech Modern, veins are based on a circle shape and spawned randomly. Mostly there will be veins beneath the small traces, which may help to locate the veins."
 				""
 				"The generation of Ore Chunks is not related to biomes."
 				""
@@ -616,7 +598,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "53CBC212B1D5D73A"
-					table_id: 2808411397077784956L
 					type: "random"
 				}
 				{
@@ -657,15 +638,15 @@
 			id: "1B8C82D9F9EF8F62"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "5F9169918D07ED97"
-					table_id: 2808411397077784956L
-					type: "random"
+					count: 10
+					id: "6C1D0554CC512B5D"
+					item: "kubejs:coin_smith_1"
+					type: "item"
 				}
 				{
 					exclude_from_claim_all: true
-					id: "3BFD124FE3D00A56"
-					table_id: 3957302745634910997L
+					id: "3CFA95DE586BA290"
+					table_id: 2709492760246255741L
 					type: "choice"
 				}
 			]
@@ -798,7 +779,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "6EC2B20A268C89C1"
-					table_id: 2808411397077784956L
 					type: "random"
 				}
 				{
@@ -862,7 +842,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "1C5853933B51C5BC"
-					table_id: 2808411397077784956L
 					type: "random"
 				}
 				{
@@ -950,26 +929,16 @@
 			id: "29E747C65F0CE2A4"
 			rewards: [
 				{
-					id: "51779974E6671F88"
-					item: "minecraft:pumpkin_pie"
-					type: "item"
-				}
-				{
-					id: "4ABB134342B60A16"
-					item: "minecraft:golden_carrot"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "3E0F2F1BC2C6063E"
-					table_id: 2808411397077784956L
-					type: "random"
-				}
-				{
 					count: 10
 					id: "771E2C3E16A12C18"
 					item: "kubejs:coin_smith_1"
 					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "159F508DB4117724"
+					table_id: 5253959101313332813L
+					type: "choice"
 				}
 			]
 			shape: "square"
@@ -1112,7 +1081,6 @@
 				{
 					exclude_from_claim_all: true
 					id: "144A3DE836FE9184"
-					table_id: 2808411397077784956L
 					type: "random"
 				}
 				{
@@ -1777,6 +1745,184 @@
 			title: "&2When All You Have is a Hammer..."
 			x: -16.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["3834A035016F3AF6"]
+			description: [
+				"You may have noticed that you can make more than just Charcoal in a Coke Oven, you can also make Coke."
+				""
+				"The data below shows the burn time (BT), how long it takes in ticks - 20 ticks is 1 second - and how much creosote (Cr) you gain."
+				""
+				"Coal 1600BT + 1800t -> Coal Coke 3200BT + 500l Cr"
+				"Wood Log 300BT + 1800t -> Charcoal 1600BT + 250l Cr"
+				"Cactus + 500t -> Cactus Charcoal 400BT + 30l Cr"
+				"Cactus Charcoal 400BT + 500t -> Cactus Coke 800BT + 30l Cr"
+				"Sugar Cane + 500t -> Sugar Charcoal 400BT + 30l Cr"
+				"Sugar Charcoal 400BT + 500t   -> Sugar Coke 800BT +30l Cr"
+				""
+				"You want to save Coke for making steel in your Bricked Blast Furnace (BBF) later on."
+			]
+			icon: "gtceu:coke_gem"
+			id: "5131A65C192DE6D7"
+			rewards: [
+				{
+					count: 4
+					id: "0E96D85061F1F2F3"
+					item: "extratech:sugar_coke"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A5A5194C2B66A65"
+					item: "extratech:cactus_coke"
+					type: "item"
+				}
+				{
+					id: "732F607B4E6EAB86"
+					item: "lootbag:loot_bag_stone"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "62EF1BDCB603D281"
+					item: "kubejs:coin_nature_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "5B27C86E85B7807E"
+					item: { Count: 8b, id: "minecraft:coal" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "017F5C62F9C01427"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs_that_burn"
+						}
+					}
+					title: "Any #minecraft:logs_that_burn"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "370F0F4F60664454"
+					item: { Count: 8b, id: "minecraft:cactus" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5A931394A742408F"
+					item: { Count: 8b, id: "minecraft:sugar_cane" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1593FC1F8B912D4B"
+					item: { Count: 8b, id: "gtceu:coke_gem" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1E4671ACC60513B3"
+					item: { Count: 8b, id: "minecraft:charcoal" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0DD48C65D9BCBE33"
+					item: { Count: 8b, id: "extratech:cactus_charcoal" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "42D8ADCBDB975447"
+					item: { Count: 8b, id: "extratech:sugar_charcoal" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3762CE43A96476E4"
+					item: { Count: 8b, id: "extratech:cactus_coke" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "51643F92BE90996E"
+					item: { Count: 8b, id: "extratech:sugar_coke" }
+					type: "item"
+				}
+			]
+			title: "&2Personally, I Prefer Pepsi™"
+			x: 6.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["265526DA221CB12D"]
+			description: ["Your tools will eventually lose durability. You think it would be a good idea to collect more gravel in order to provide yourself with flint for more tools. Try searching near water."]
+			id: "677C7E15DF6A285A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6237B2D53EE171D1"
+					table_id: 2831658118662727528L
+					type: "choice"
+				}
+				{
+					count: 5
+					id: "23A2CC4755CB83CC"
+					item: "kubejs:coin_exploration_1"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 128L
+				id: "6835E00EF3242BB1"
+				item: { Count: 2b, id: "minecraft:gravel" }
+				type: "item"
+			}]
+			title: "&2Gravel: The Gathering"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["626767AC75C16E73"]
+			description: [
+				"Finite water is a problem, that's for sure. Last night, you had an idea. If you can drink cacti, you should also be able make water out of 8 cacti and use that for most recipes that require water. How cool is that? So what about another trade? 10 wood for... 3 cacti so you can setup a farm. Deal?"
+				""
+				"To automate the farm, place a string next to the cactus and a sand on top of the string. Now when the cactus grows, it will automatically break!  You can stack this horizontally and vertically to make a very efficient cactus farm.  Use water to redirect the cactus to a convenient pickup location or to above a hopper."
+				""
+				"First player to make a base running off of only cactus water gets a cape!"
+			]
+			icon: "minecraft:cactus"
+			id: "250CA7AEAD1FF2E4"
+			rewards: [{
+				count: 3
+				id: "5FD539E09889A97A"
+				item: "minecraft:cactus"
+				type: "item"
+			}]
+			tasks: [{
+				count: 10L
+				id: "57C7D974C6BB318A"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			title: "&2Finite Water!?"
+			x: -4.0d
+			y: 4.5d
 		}
 	]
 	title: "&2Tier 0 - Stone Age"

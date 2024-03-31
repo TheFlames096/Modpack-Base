@@ -25,10 +25,10 @@ Note: Even if no fields are listed above, some methods are still available as fi
 | ---- | ---------- | ----------- | ------- |
 | getBlock |  |  | BlockContainerJS | ✘ |
 | getItem |  |  | ItemStack | ✘ |
-| getEntity |  |  | Entity | ✘ |
 | getFacing |  |  | Direction | ✘ |
-| hasGameStage | String |  | boolean | ✘ |
+| getEntity |  |  | Entity | ✘ |
 | addGameStage | String |  | void | ✘ |
+| hasGameStage | String |  | boolean | ✘ |
 | getPlayer |  |  | Player | ✘ |
 | removeGameStage | String |  | void | ✘ |
 | getLevel |  |  | Level | ✘ |
@@ -53,23 +53,14 @@ The block that was left clicked.
 The item that was used to left click the block.
 ```
 
-- `Entity getEntity()`
-```
-The player that left clicked the block.
-```
-
 - `Direction getFacing()`
 ```
 The face of the block that was left clicked.
 ```
 
-- `boolean hasGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
+- `Entity getEntity()`
 ```
-Checks if the player has the specified game stage
+The player that left clicked the block.
 ```
 
 - `void addGameStage(String var0)`
@@ -79,6 +70,15 @@ Checks if the player has the specified game stage
 
 ```
 Adds the specified game stage to the player
+```
+
+- `boolean hasGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Checks if the player has the specified game stage
 ```
 
 - `void removeGameStage(String var0)`
