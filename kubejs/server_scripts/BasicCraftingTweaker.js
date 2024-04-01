@@ -6,6 +6,11 @@ ServerEvents.recipes(event => {
         "minecraft:golden_pickaxe",
         "minecraft:diamond_pickaxe",
 
+        "minecraft:iron_sword",
+        "minecraft:stone_sword",
+        "minecraft:golden_sword",
+        "minecraft:diamond_sword",
+
         "minecraft:charcoal",
         "minecraft:melon_seeds",
         "minecraft:pumpkin_seeds",
@@ -46,19 +51,25 @@ ServerEvents.recipes(event => {
     event.custom({ "type": "botania:mana_infusion", "catalyst": { "type": "block", "block": "botania:alchemy_catalyst" }, "group": "botania:flower_cycle", "input": { "item": "iguanatweaksreborn:cyan_flower" }, "mana": 400, "output": { "item": "minecraft:blue_orchid" } })
 
 
-    event.remove({ id: "solapplepie:lunchbag" })
-    event.remove({ id: "solapplepie:lunchbox" })
-    event.remove({ id: "solapplepie:golden_lunchbox" })
-    event.remove({ id: "minecraft:blast_furnace" })
-    event.remove({ id: "minecraft:nether_bricks" })
-    event.remove({ id: "minecraft:anvil" })
+    event.remove([
+        { id: "solapplepie:lunchbag" },
+        { id: "solapplepie:lunchbox" },
+        { id: "solapplepie:golden_lunchbox" },
+        { id: "minecraft:blast_furnace" },
+        { id: "minecraft:nether_bricks" },
+        { id: "minecraft:anvil" },
+        { id: "miniutilities:wooden_spikes" },
+        { id: "miniutilities:iron_spikes" },
+        { id: "miniutilities:gold_spikes" },
+        { id: "miniutilities:diamond_spikes" }
+    ])
     event.remove({ id: "gtceu:compressor/compress_plate_dust_wood_" })
     event.remove({ id: "gtceu:compressor/compress_plate_dust_treated_wood_" })
     event.remove({ id: "ceramicbucket:unfired_clay_bucket" })
     event.remove({ output: "#railcraft:strengthened_glass" })
     event.remove({ output: "#minecraft:beds" })
     event.remove({ output: "minecraft:piston" })
-    event.remove({ output: "#forge:mushrooms",mod: 'botania' })
+    event.remove({ output: "#forge:mushrooms", mod: 'botania' })
     event.remove({ type: "minecraft:crafting_shaped", output: "#minecraft:slabs" })
     event.remove({ type: "minecraft:crafting_shaped", output: "#minecraft:doors" })
     event.remove({ type: "minecraft:crafting_shaped", output: "#minecraft:trapdoors" })
@@ -71,8 +82,57 @@ ServerEvents.recipes(event => {
         })
         event.recipes.minecraft.crafting_shapeless("minecraft:" + color + "_bed", ["#minecraft:beds", color + '_dye'])
         event.recipes.gtceu.chemical_bath(color + '_strengthen_glass_dyed').EUt(30).duration(10).itemInputs("#railcraft:strengthened_glass").inputFluids(Fluid.of("gtceu:" + color + "_dye", 36)).itemOutputs("railcraft:" + color + "_strengthened_glass")
-    }
-    )
+    })
+    event.recipes.minecraft.crafting_shaped("miniutilities:wooden_spikes",['sSd','RPR','PBP'],{
+        s:"#forge:tools/saws",
+        d:"#forge:tools/screwdrivers",
+        S:"minecraft:wooden_sword",
+        P:"#forge:plates/wood",
+        R:"#forge:screws/wood",
+        B:"#minecraft:logs"
+    })
+    event.recipes.kubejs.shaped("miniutilities:iron_spikes",['sSd','RPR','PBP'],{
+        s:"#forge:tools/saws",
+        d:"#forge:tools/screwdrivers",
+        S:"minecraft:iron_sword",
+        P:"#forge:plates/iron",
+        R:"#forge:screws/iron",
+        B:"#forge:storage_blocks/iron"
+    })
+    event.recipes.minecraft.crafting_shaped("miniutilities:gold_spikes",['sSd','RPR','PBP'],{
+        s:"#forge:tools/saws",
+        d:"#forge:tools/screwdrivers",
+        S:"minecraft:golden_sword",
+        P:"#forge:plates/gold",
+        R:"#forge:screws/gold",
+        B:"#forge:storage_blocks/gold"
+    })
+    event.recipes.minecraft.crafting_shaped("miniutilities:diamond_spikes",['sSd','RPR','PBP'],{
+        s:"#forge:tools/saws",
+        d:"#forge:tools/screwdrivers",
+        S:"minecraft:diamond_sword",
+        P:"#forge:plates/diamond",
+        R:"#forge:screws/diamond",
+        B:"#forge:storage_blocks/diamond"
+    })
+    event.recipes.minecraft.crafting_shaped("minecraft:golden_sword",[' P ','hPf',' S '],{
+        P:"#forge:plates/gold",
+        f:"#forge:tools/files",
+        h:"#forge:tools/hammers",
+        S:"#forge:rods/wood"
+    })
+    event.recipes.minecraft.crafting_shaped("minecraft:iron_sword",[' P ','hPf',' S '],{
+        P:"#forge:plates/iron",
+        f:"#forge:tools/files",
+        h:"#forge:tools/hammers",
+        S:"#forge:rods/wood"
+    })
+    event.recipes.minecraft.crafting_shaped("minecraft:diamond_sword",[' P ','hPf',' S '],{
+        P:"#forge:plates/diamond",
+        f:"#forge:tools/files",
+        h:"#forge:tools/hammers",
+        S:"#forge:rods/wood"
+    })
     event.replaceInput([{ id: "gtceu:shaped/steam_boiler_lava_bronze" }, { id: "gtceu:shaped/steam_boiler_lava_steel" }], "minecraft:glass", "fluidtank:tank_wood")
     event.recipes.gtceu.compressor("gtceu:compressor/compress_plate_dust_wood_").EUt(2).duration(200).itemInputs("8x #forge:dusts/wood").itemOutputs("gtceu:wood_plate")
     event.recipes.gtceu.compressor("gtceu:compressor/compress_plate_dust_treated_wood_").EUt(2).duration(200).itemInputs("8x #forge:dusts/treated_wood").itemOutputs("gtceu:treated_wood_plate")
@@ -270,7 +330,7 @@ ServerEvents.recipes(event => {
     })
     event.recipes.gtceu.assembler('minecraft:blast_furnace').EUt(30).duration(300).itemInputs('5x #forge:plates/iron').itemInputs('minecraft:furnace').itemOutputs("minecraft:blast_furnace")
 
-    event.recipes.minecraft.crafting_shapeless("8x gtceu:cobalt_brass_dust",["7x #forge:dusts/brass","#forge:dusts/aluminium","#forge:dusts/cobalt"])
+    event.recipes.minecraft.crafting_shapeless("8x gtceu:cobalt_brass_dust", ["7x #forge:dusts/brass", "#forge:dusts/aluminium", "#forge:dusts/cobalt"])
 
 })
 ServerEvents.tags("block", event => {

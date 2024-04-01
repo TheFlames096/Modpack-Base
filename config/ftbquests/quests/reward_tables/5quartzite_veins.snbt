@@ -1,0 +1,12 @@
+{
+	id: "78132DA74EBC2AE9"
+	loot_size: 1
+	order_index: 15
+	rewards: [
+		{ count: 16, item: "minecraft:nether_wart" }
+		{ count: 4, item: "minecraft:ghast_tear" }
+		{ count: 4, item: "minecraft:blaze_rod" }
+		{ item: "lootbag:loot_bag_lv" }
+	]
+	title: "&5Quartzite Veins"
+}

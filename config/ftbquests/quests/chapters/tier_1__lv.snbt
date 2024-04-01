@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "tier_1__lv"
 	group: "7DACA16D0CF75277"
+	icon: "gtceu:aluminium_gear"
 	id: "15855339D8D94B64"
 	order_index: 2
 	quest_links: [ ]
@@ -278,7 +279,7 @@
 			}]
 			title: "&5Hey DJ, Mix it!"
 			x: 2.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2F6F7C7A5863F920"]
@@ -595,6 +596,213 @@
 			title: "&5A Truly Sharp Saw Blade"
 			x: -11.0d
 			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1ACB2E07207A2B31"
+				"30F3355FFB9A88B7"
+			]
+			description: [
+				"An absolutely mandatory machine to have. It will cut rods into bolts, plates into casings, logs into planks, and all of that will be done with the highest possible efficiency. Totally worth it! "
+				""
+				"You can use water, distilled water, or lubricant to run it. Use lubricant if possible, as it's the best."
+			]
+			id: "3AE10289F54ACF96"
+			rewards: [
+				{
+					id: "220788064753403B"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6123D090E77B798A"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "245B07A1336CDDF7"
+				item: "gtceu:lv_cutter"
+				type: "item"
+			}]
+			title: "&5Cutting Things Apart"
+			x: -11.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F6F7C7A5863F920"]
+			description: [
+				"The second item you'll need a lot of. When you want to get fluid out of tanks you'll need one. "
+				""
+				"Attach it to fluid pipes or GT machines/blocks. Adjust the flow direction and redstone behavior with a screwdriver. Place it on the side facing the tank or machine. When looking at a pipe or machine, you can use the grid to place it on a side already touching another thing. You can use the grid with a screwdriver to adjust a cover on that side as well."
+				""
+				"When a GT pipe or machine has any cover, including a pump cover, wrenching the machine back into an item keeps the cover on that machine. The cover stays with the machine in the same direction when it is placed down again. This way you can arrange pump and conveyor covers on a machine outside a tight spot and place it there. To remove covers, use the crowbar."
+				""
+				"It can also be further upgraded into a fluid regulator that allows precise control of fluid transfer speed."
+			]
+			id: "304FFAF7A568E3C1"
+			rewards: [
+				{
+					id: "79E21D1424ACFA10"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "5F66FE1D47ACDC6E"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "157B3A474F64CE0B"
+					item: "gtceu:steel_large_fluid_pipe"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "606D049FC9B54B25"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			title: "&5You're Gonna Hate This #2"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2F6F7C7A5863F920"]
+			description: ["The Nether is full of different kinds of quartz. Go and find a quartzite vein. They're located between Y 80-120. It might be hard to find one, because that area is usually air, you'll just have to keep looking."]
+			icon: "gtceu:netherrack_nether_quartz_ore"
+			id: "1ADD4A6539C89056"
+			rewards: [
+				{
+					id: "3F8F6C7E10BED3A1"
+					item: "delightful:deluxe_cheeseburger"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "74EE1C16CFC25998"
+					item: "simplefarming:pizza"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6A6F46E6967BCF18"
+					table_id: 8652309505712597737L
+					type: "choice"
+				}
+				{
+					count: 15
+					id: "161C8E1B561ACCDC"
+					item: "kubejs:coin_exploration_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "07142EBA1B712112"
+					item: { Count: 32b, id: "gtceu:raw_quartzite" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "143180FB9101C44E"
+					item: { Count: 32b, id: "gtceu:raw_barite" }
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "68E2E8415F33DE86"
+					item: { Count: 48b, id: "gtceu:raw_certus_quartz" }
+					type: "item"
+				}
+			]
+			title: "&5Quartzite Veins"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1ADD4A6539C89056"]
+			description: [
+				"The fifth item you'll need a lot of. For the microwave, the scanner, the precision laser engraver, etc."
+				""
+				"The Emitter and Sensor aren't used as much as the other items, fortunately."
+			]
+			id: "143274AB4CCF432C"
+			rewards: [
+				{
+					id: "12E401B75305BCA2"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7AFF9362328DF956"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "066C386C01227BD4"
+					item: "gtceu:certus_quartz_gem"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "24F5D97AF5A031DB"
+				item: "gtceu:lv_emitter"
+				type: "item"
+			}]
+			title: "&5You're Gonna Hate This #5"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1ADD4A6539C89056"]
+			description: [
+				"The sixth item you'll need a lot of. For the scanner and the seismic prospector."
+				""
+				"&3BTW, there's technically one more, the Field Generator, but you need higher tier circuits to make it, and it isn't used as often until later tiers."
+			]
+			id: "5DAB672D3B8A2DAD"
+			rewards: [
+				{
+					id: "152AB87E87E50706"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "2175F3120B0213B0"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "56003BD92C027701"
+					item: "gtceu:certus_quartz_gem"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "4C860ADDD15F957E"
+				item: "gtceu:lv_sensor"
+				type: "item"
+			}]
+			title: "&5You're Gonna Hate This #6"
+			x: 9.0d
+			y: 3.0d
 		}
 	]
 	title: "&5Tier 1 - LV"
