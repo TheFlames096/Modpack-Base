@@ -44,8 +44,8 @@
 				type: "item"
 			}]
 			title: "&5Welcome to Tier 1, LV"
-			x: 0.0d
-			y: 0.0d
+			x: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2F6F7C7A5863F920"]
@@ -96,8 +96,8 @@
 				}
 			]
 			title: "&5Getting Ready for Tier 2, MV"
-			x: 0.0d
-			y: -4.5d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2F6F7C7A5863F920"]
@@ -122,8 +122,8 @@
 				type: "item"
 			}]
 			title: "&5Electric Furnace"
-			x: 2.0d
-			y: -1.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2F6F7C7A5863F920"]
@@ -149,8 +149,8 @@
 				type: "item"
 			}]
 			title: "&5Alloy Smelter"
-			x: -1.0d
-			y: 2.0d
+			x: 3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2F6F7C7A5863F920"]
@@ -176,8 +176,8 @@
 				type: "item"
 			}]
 			title: "&5Saving Redstone"
-			x: -4.0d
-			y: -2.5d
+			x: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2F6F7C7A5863F920"]
@@ -204,8 +204,8 @@
 				type: "item"
 			}]
 			title: "&5Damn You, Wire Cutter!"
-			x: -3.0d
-			y: -4.0d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6C69A4BB24DC2F61"]
@@ -248,8 +248,8 @@
 				}
 			]
 			title: "&5Magnetize Your Rods"
-			x: -6.0d
-			y: -2.5d
+			x: -2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2F6F7C7A5863F920"]
@@ -278,8 +278,8 @@
 				type: "item"
 			}]
 			title: "&5Hey DJ, Mix it!"
-			x: 2.0d
-			y: 1.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2F6F7C7A5863F920"]
@@ -316,8 +316,8 @@
 				type: "item"
 			}]
 			title: "&5You're Gonna Hate This #1"
-			x: -6.5d
-			y: 0.0d
+			x: -2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2F6F7C7A5863F920"]
@@ -350,8 +350,8 @@
 				type: "item"
 			}]
 			title: "&5You're Gonna Hate This #3"
-			x: 4.0d
-			y: 6.0d
+			x: 8.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3FE0B49D8B148EA5"]
@@ -382,8 +382,8 @@
 				type: "item"
 			}]
 			title: "&5Saving Metal With Bending"
-			x: 4.0d
-			y: -7.0d
+			x: 8.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["2E4A3426B7B08A51"]
@@ -419,8 +419,8 @@
 				}
 			]
 			title: "&5Empty Cells"
-			x: 6.0d
-			y: -8.0d
+			x: 10.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2E4A3426B7B08A51"]
@@ -451,8 +451,8 @@
 				type: "item"
 			}]
 			title: "&5Portable Tanks Too Small?"
-			x: 6.0d
-			y: -6.0d
+			x: 10.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["2E4A3426B7B08A51"]
@@ -479,8 +479,8 @@
 				type: "item"
 			}]
 			title: "&5No More Filing"
-			x: -11.0d
-			y: -7.0d
+			x: -7.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7F4BC6DDC9E68F1A"]
@@ -555,8 +555,8 @@
 				}
 			]
 			title: "&5A New Alloy - Cobalt Brass"
-			x: -11.0d
-			y: -5.0d
+			x: -7.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["57666841BABE5CFD"]
@@ -594,8 +594,8 @@
 				}
 			]
 			title: "&5A Truly Sharp Saw Blade"
-			x: -11.0d
-			y: -3.5d
+			x: -7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -629,8 +629,8 @@
 				type: "item"
 			}]
 			title: "&5Cutting Things Apart"
-			x: -11.0d
-			y: 0.0d
+			x: -7.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2F6F7C7A5863F920"]
@@ -671,62 +671,46 @@
 				type: "item"
 			}]
 			title: "&5You're Gonna Hate This #2"
-			x: -4.0d
-			y: 4.5d
+			x: 0.0d
+			y: 6.5d
 		}
 		{
-			dependencies: ["2F6F7C7A5863F920"]
-			description: ["The Nether is full of different kinds of quartz. Go and find a quartzite vein. They're located between Y 80-120. It might be hard to find one, because that area is usually air, you'll just have to keep looking."]
-			icon: "gtceu:netherrack_nether_quartz_ore"
+			dependencies: [
+				"2F6F7C7A5863F920"
+				"03C126BCC54B4BEC"
+			]
+			description: ["For the emitter and the sensor you'll need to get some certus quartz."]
+			icon: "gtceu:certus_quartz_gem"
 			id: "1ADD4A6539C89056"
 			rewards: [
 				{
-					id: "3F8F6C7E10BED3A1"
-					item: "delightful:deluxe_cheeseburger"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "74EE1C16CFC25998"
-					item: "simplefarming:pizza"
+					count: 5
+					id: "071ADFF4D7119587"
+					item: "fruitsdelight:hamimelon_juice"
 					type: "item"
 				}
 				{
 					exclude_from_claim_all: true
-					id: "6A6F46E6967BCF18"
-					table_id: 8652309505712597737L
+					id: "660A6FAD2A79A354"
+					table_id: 6795785672198474386L
 					type: "choice"
 				}
 				{
-					count: 15
-					id: "161C8E1B561ACCDC"
-					item: "kubejs:coin_exploration_1"
+					count: 3
+					id: "2A859E74906EFD8D"
+					item: "kubejs:coin_exploration_10"
 					type: "item"
 				}
 			]
-			tasks: [
-				{
-					count: 32L
-					id: "07142EBA1B712112"
-					item: { Count: 32b, id: "gtceu:raw_quartzite" }
-					type: "item"
-				}
-				{
-					count: 32L
-					id: "143180FB9101C44E"
-					item: { Count: 32b, id: "gtceu:raw_barite" }
-					type: "item"
-				}
-				{
-					count: 48L
-					id: "68E2E8415F33DE86"
-					item: { Count: 48b, id: "gtceu:raw_certus_quartz" }
-					type: "item"
-				}
-			]
-			title: "&5Quartzite Veins"
-			x: 7.5d
-			y: 0.0d
+			tasks: [{
+				count: 2L
+				id: "591EB1E56837C6B7"
+				item: { Count: 2b, id: "gtceu:certus_quartz_gem" }
+				type: "item"
+			}]
+			title: "&5Process Some Certus Quartz"
+			x: 17.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1ADD4A6539C89056"]
@@ -763,8 +747,8 @@
 				type: "item"
 			}]
 			title: "&5You're Gonna Hate This #5"
-			x: 6.0d
-			y: 3.0d
+			x: 16.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["1ADD4A6539C89056"]
@@ -801,8 +785,198 @@
 				type: "item"
 			}]
 			title: "&5You're Gonna Hate This #6"
-			x: 9.0d
-			y: 3.0d
+			x: 19.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2F6F7C7A5863F920"]
+			description: ["The Nether is full of different kinds of quartz. Go and find a quartzite vein. They're located between Y 80-120. It might be hard to find one, because that area is usually air, you'll just have to keep looking."]
+			icon: "gtceu:netherrack_nether_quartz_ore"
+			id: "03C126BCC54B4BEC"
+			rewards: [
+				{
+					id: "77C9C40D1052D458"
+					item: "delightful:deluxe_cheeseburger"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "059C2BE4C9F8B90F"
+					item: "simplefarming:pizza"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6863E2B483937CBE"
+					table_id: 8652309505712597737L
+					type: "choice"
+				}
+				{
+					count: 15
+					id: "1C8498587DE2992F"
+					item: "kubejs:coin_exploration_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "3BD8DBB480B41413"
+					item: { Count: 32b, id: "gtceu:raw_quartzite" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "3E87D405E09C2D40"
+					item: { Count: 32b, id: "gtceu:raw_barite" }
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "4025CE1A1476140B"
+					item: { Count: 48b, id: "gtceu:raw_certus_quartz" }
+					type: "item"
+				}
+			]
+			title: "&5Quartzite Veins"
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2F6F7C7A5863F920"]
+			description: [
+				"Using the power of electricity you can get even more out of your dusts. Somehow. With no catalysts, electrolytes, or anything. Look, don't ask me how it works. oIt just worksr."
+				""
+				"Aside from that, this is a very important machine to process some items and fluids into other, more useful items and fluids. A basic example of this is electrolyzing Water, which should be completely free to you, to get both Hydrogen and Oxygen, two very important fluids for your progression."
+			]
+			id: "195F2141B48275C4"
+			rewards: [
+				{
+					id: "7BE0ADA342C83C3B"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4F2484C9C2F64E94"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "16F025F40268BA25"
+				item: "gtceu:lv_electrolyzer"
+				type: "item"
+			}]
+			title: "&5Electrically Separating Dusts"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3FE0B49D8B148EA5"]
+			description: [
+				"It is highly recommended to get one of these, as the efficiency in terms of coal/steam used to macerate something is a lot better when using EU."
+				""
+				"You get more byproduct as the voltage goes up. More information could be found in JEI."
+			]
+			id: "0F92EA4E5614D6D4"
+			rewards: [
+				{
+					id: "14B2D8CA83A5F400"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "151DC62F851CDF58"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "793BBA22D63C26ED"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			title: "&5Electric Macerator"
+			x: 12.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3FE0B49D8B148EA5"]
+			description: [
+				"The fourth item you'll need a lot of, and is also a pain to craft. The most painful item you need to make lots of. "
+				""
+				"It works like a conveyor but can work with selected item slots, adjust with a screwdriver."
+			]
+			id: "2D9F41373F2F788D"
+			rewards: [
+				{
+					count: 2
+					id: "7C6E6863B48F9B0D"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+				{
+					id: "3466274A39E22266"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4C1D63B8E418EB8E"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "5E73FFD1F4E621CD"
+				item: "gtceu:lv_robot_arm"
+				type: "item"
+			}]
+			title: "&5You're Gonna Hate This #4"
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2D9F41373F2F788D"]
+			description: [
+				"An absolute must have for fans of the movie. Oh, and to make all the things, of course. There's a number of recipes that take less materials to make in the assembler, or can only be made with it, so make it ASAP!"
+				""
+				"You can use the battery slot and the other extra slot in the GUI to store unused configuration circuits."
+				""
+				"You can go to the Twilight Forest after making your Assembler. See Road of Witches tab for details."
+			]
+			id: "78AA89E7707BD749"
+			rewards: [
+				{
+					id: "3CE4389258242353"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "1439D2BFC7DDF738"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				id: "2DD74D8D32FEEB5F"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			title: "&5Avengers, Assemble!"
+			x: 12.0d
+			y: 13.0d
 		}
 	]
 	title: "&5Tier 1 - LV"

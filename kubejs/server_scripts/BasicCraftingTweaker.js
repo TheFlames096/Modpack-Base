@@ -1,16 +1,5 @@
 ServerEvents.recipes(event => {
     let Remove_ID = [
-        "minecraft:wooden_pickaxe",
-        "minecraft:iron_pickaxe",
-        "minecraft:stone_pickaxe",
-        "minecraft:golden_pickaxe",
-        "minecraft:diamond_pickaxe",
-
-        "minecraft:iron_sword",
-        "minecraft:stone_sword",
-        "minecraft:golden_sword",
-        "minecraft:diamond_sword",
-
         "minecraft:charcoal",
         "minecraft:melon_seeds",
         "minecraft:pumpkin_seeds",
@@ -57,11 +46,11 @@ ServerEvents.recipes(event => {
         { id: "solapplepie:golden_lunchbox" },
         { id: "minecraft:blast_furnace" },
         { id: "minecraft:nether_bricks" },
-        { id: "minecraft:anvil" },
         { id: "miniutilities:wooden_spikes" },
         { id: "miniutilities:iron_spikes" },
         { id: "miniutilities:gold_spikes" },
-        { id: "miniutilities:diamond_spikes" }
+        { id: "miniutilities:diamond_spikes" },
+        { id: "enderio:stick" }
     ])
     event.remove({ id: "gtceu:compressor/compress_plate_dust_wood_" })
     event.remove({ id: "gtceu:compressor/compress_plate_dust_treated_wood_" })
@@ -91,7 +80,7 @@ ServerEvents.recipes(event => {
         R:"#forge:screws/wood",
         B:"#minecraft:logs"
     })
-    event.recipes.kubejs.shaped("miniutilities:iron_spikes",['sSd','RPR','PBP'],{
+    event.recipes.minecraft.crafting_shaped("miniutilities:iron_spikes",['sSd','RPR','PBP'],{
         s:"#forge:tools/saws",
         d:"#forge:tools/screwdrivers",
         S:"minecraft:iron_sword",
@@ -115,24 +104,6 @@ ServerEvents.recipes(event => {
         R:"#forge:screws/diamond",
         B:"#forge:storage_blocks/diamond"
     })
-    event.recipes.minecraft.crafting_shaped("minecraft:golden_sword",[' P ','hPf',' S '],{
-        P:"#forge:plates/gold",
-        f:"#forge:tools/files",
-        h:"#forge:tools/hammers",
-        S:"#forge:rods/wood"
-    })
-    event.recipes.minecraft.crafting_shaped("minecraft:iron_sword",[' P ','hPf',' S '],{
-        P:"#forge:plates/iron",
-        f:"#forge:tools/files",
-        h:"#forge:tools/hammers",
-        S:"#forge:rods/wood"
-    })
-    event.recipes.minecraft.crafting_shaped("minecraft:diamond_sword",[' P ','hPf',' S '],{
-        P:"#forge:plates/diamond",
-        f:"#forge:tools/files",
-        h:"#forge:tools/hammers",
-        S:"#forge:rods/wood"
-    })
     event.replaceInput([{ id: "gtceu:shaped/steam_boiler_lava_bronze" }, { id: "gtceu:shaped/steam_boiler_lava_steel" }], "minecraft:glass", "fluidtank:tank_wood")
     event.recipes.gtceu.compressor("gtceu:compressor/compress_plate_dust_wood_").EUt(2).duration(200).itemInputs("8x #forge:dusts/wood").itemOutputs("gtceu:wood_plate")
     event.recipes.gtceu.compressor("gtceu:compressor/compress_plate_dust_treated_wood_").EUt(2).duration(200).itemInputs("8x #forge:dusts/treated_wood").itemOutputs("gtceu:treated_wood_plate")
@@ -145,11 +116,6 @@ ServerEvents.recipes(event => {
     })
     event.recipes.gtceu.chemical_reactor("railcraft:strengthened_glass").EUt(30).duration(50).itemInputs(["#forge:dusts/tin", "#forge:dusts/saltpeter"]).inputFluids(Fluid.of('gtceu:glass', 864)).itemOutputs("6x railcraft:white_strengthened_glass")
     event.recipes.gtceu.assembler("minecraft:piston").circuit(1).itemInputs(["#forge:cobblestone", "#forge:small_gears/iron", "#minecraft:wooden_fences", "6x gtceu:wood_plate"]).inputFluids(Fluid.of('gtceu:redstone', 72)).itemOutputs("minecraft:piston")
-    event.recipes.minecraft.crafting_shaped("minecraft:anvil", ['BBB', 'SBS', 'PBP'], {
-        B: "#forge:storage_blocks/iron",
-        S: "#forge:screws/iron",
-        P: "#forge:plates/iron",
-    })
 
     event.recipes.minecraft.crafting_shapeless("4x minecraft:pumpkin_seeds", ["minecraft:pumpkin", "#forge:tools/mallets"])
     event.recipes.minecraft.crafting_shapeless("minecraft:melon_seeds", ["minecraft:melon_slice", "#forge:tools/mallets"])
@@ -302,12 +268,6 @@ ServerEvents.recipes(event => {
     })
 
     event.recipes.minecraft.crafting_shapeless("gtceu:wood_dust", ["#minecraft:logs", "#forge:tools/mortars"])
-    event.recipes.minecraft.crafting_shapeless("kubejs:unfired_clay_brick", ["minecraft:clay_ball", "gtceu:brick_wooden_form"])
-    event.recipes.minecraft.smelting("minecraft:brick", "kubejs:unfired_clay_brick")
-    event.recipes.minecraft.crafting_shaped("2x minecraft:bricks", ['CCC', 'CBC', 'CCC'], {
-        C: "minecraft:brick",
-        B: { "type": "bucketlib:fluid", "tag": "minecraft:water" }
-    })
     event.recipes.minecraft.crafting_shaped("minecraft:paper", ['CCC', 'CBC', 'CCC'], {
         C: "#forge:dusts/wood",
         B: { "type": "bucketlib:fluid", "tag": "minecraft:water" }

@@ -17,7 +17,6 @@ StartupEvents.registry('item', e => {
     Coin('technique')
     Coin('wizard')
 
-    e.create('unfired_clay_brick')
     e.create('advanced_coke_oven_brick')
     e.create('advanced_coke_oven_brick_dust')
     e.create('hot_netherrack_brick')

@@ -1,0 +1,11 @@
+{
+	id: "5E4F7B1031144A92"
+	loot_size: 1
+	order_index: 16
+	rewards: [
+		{ count: 8, item: "minecraft:glowstone_dust" }
+		{ count: 4, item: "minecraft:blaze_powder" }
+		{ item: "lootbag:loot_bag_lv" }
+	]
+	title: "&5Process Some Certus Quartz"
+}
