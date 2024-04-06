@@ -2003,7 +2003,10 @@
 			y: 9.5d
 		}
 		{
-			dependencies: ["348BA731467B27F0"]
+			dependencies: [
+				"1C3E3CF7D1388BF7"
+				"348BA731467B27F0"
+			]
 			description: [
 				"It's a larger version of the Steam Macerator. It only works 8 at a time, but is faster. Note that this multi requires &4Very Specific&r I/O blocks, don't mess it up."
 				""
@@ -2058,7 +2061,7 @@
 				}
 			]
 			title: "&3A Steam Tier Multi? Unpossible!"
-			x: 3.5d
+			x: 2.0d
 			y: 11.0d
 		}
 		{
@@ -2173,6 +2176,23 @@
 			title: "&3How Can I Carry All These Items?"
 			x: 8.0d
 			y: 9.5d
+		}
+		{
+			dependencies: ["348BA731467B27F0"]
+			description: [
+				"This is the first GT-type tank. It stores 32 buckets or 32,000L, and can be used to I/O cells. The ULV Tank from GT++ needs steel plates, iron plates, tin plates, a clay pipe, and a water bucket."
+				""
+				"GT tanks do not auto-output. If you want to move fluids out of the tank, use a GT pump, conduit, or something similar."
+			]
+			id: "1C3E3CF7D1388BF7"
+			tasks: [{
+				id: "36A67D9A477D0781"
+				item: "gtceu:bronze_drum"
+				type: "item"
+			}]
+			title: "&3The GT Tank, ULV Version"
+			x: 3.5d
+			y: 11.0d
 		}
 	]
 	title: "&3Tier 0.5 - Steam"

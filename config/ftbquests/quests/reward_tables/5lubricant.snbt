@@ -1,0 +1,22 @@
+{
+	id: "06E236BAE50D0AE8"
+	loot_size: 1
+	order_index: 18
+	rewards: [
+		{
+			count: 8
+			item: {
+				Count: 1b
+				id: "gtceu:fluid_cell"
+				tag: {
+					Fluid: {
+						Amount: 1000
+						FluidName: "gtceu:seed_oil"
+					}
+				}
+			}
+		}
+		{ item: "lootbag:loot_bag_lv" }
+	]
+	title: "&5Lubricant"
+}

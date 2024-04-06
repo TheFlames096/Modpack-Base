@@ -23,15 +23,15 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 | Name | Parameters | Return type | Static? |
 | ---- | ---------- | ----------- | ------- |
-| getBlock |  |  | BlockContainerJS | ✘ |
 | getItem |  |  | ItemStack | ✘ |
+| getEntity |  |  | Player | ✘ |
+| getBlock |  |  | BlockContainerJS | ✘ |
 | getFacing |  |  | Direction | ✘ |
-| getEntity |  |  | LivingEntity | ✘ |
 | getHand |  |  | InteractionHand | ✘ |
 | addGameStage | String |  | void | ✘ |
+| removeGameStage | String |  | void | ✘ |
 | hasGameStage | String |  | boolean | ✘ |
 | getPlayer |  |  | Player | ✘ |
-| removeGameStage | String |  | void | ✘ |
 | getLevel |  |  | Level | ✘ |
 | getServer |  |  | MinecraftServer | ✘ |
 | exit | Object |  | Object | ✘ |
@@ -44,24 +44,24 @@ Note: Even if no fields are listed above, some methods are still available as fi
 
 ### Documented members:
 
-- `BlockContainerJS getBlock()`
-```
-The block that was right clicked.
-```
-
 - `ItemStack getItem()`
 ```
 The position of the block that was right clicked.
 ```
 
+- `Player getEntity()`
+```
+The player that right clicked the block.
+```
+
+- `BlockContainerJS getBlock()`
+```
+The block that was right clicked.
+```
+
 - `Direction getFacing()`
 ```
 The face of the block being right clicked.
-```
-
-- `LivingEntity getEntity()`
-```
-The player that right clicked the block.
 ```
 
 - `InteractionHand getHand()`
@@ -78,15 +78,6 @@ The hand that was used to right click the block.
 Adds the specified game stage to the player
 ```
 
-- `boolean hasGameStage(String var0)`
-
-  Parameters:
-  - var0: String
-
-```
-Checks if the player has the specified game stage
-```
-
 - `void removeGameStage(String var0)`
 
   Parameters:
@@ -94,6 +85,15 @@ Checks if the player has the specified game stage
 
 ```
 Removes the specified game stage from the player
+```
+
+- `boolean hasGameStage(String var0)`
+
+  Parameters:
+  - var0: String
+
+```
+Checks if the player has the specified game stage
 ```
 
 - `Object exit(Object var0)`

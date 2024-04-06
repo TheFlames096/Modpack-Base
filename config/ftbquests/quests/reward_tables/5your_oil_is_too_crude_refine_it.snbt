@@ -1,0 +1,18 @@
+{
+	id: "667C6C54CB05FC1F"
+	loot_size: 1
+	order_index: 17
+	rewards: [
+		{
+			item: {
+				Count: 1b
+				id: "gtceu:programmed_circuit"
+				tag: {
+					Configuration: 0
+				}
+			}
+		}
+		{ count: 64, item: "gtceu:fluid_cell" }
+	]
+	title: "&5Your Oil is Too Crude? Refine it!"
+}
