@@ -1012,7 +1012,7 @@
 				type: "item"
 			}]
 			title: "&5Basic Ore Washer"
-			x: -1.0d
+			x: 1.0d
 			y: 9.0d
 		}
 		{
@@ -1044,7 +1044,7 @@
 				type: "item"
 			}]
 			title: "&5GT Tanks, the LV Version"
-			x: 1.0d
+			x: -1.0d
 			y: 9.0d
 		}
 		{

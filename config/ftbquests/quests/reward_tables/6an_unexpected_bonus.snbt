@@ -1,0 +1,10 @@
+{
+	id: "46A7AD76BF0C298C"
+	loot_size: 1
+	order_index: 20
+	rewards: [
+		{ count: 10, item: "lootbag:loot_bag_lv" }
+		{ count: 10, item: "lootbag:loot_bag_steam" }
+	]
+	title: "&6An Unexpected Bonus"
+}

@@ -1,0 +1,11 @@
+{
+	id: "48B1981A362E63FF"
+	loot_size: 1
+	order_index: 19
+	rewards: [
+		{ count: 8, item: "gtceu:rubber_ingot" }
+		{ count: 16, item: "gtceu:bronze_ingot" }
+		{ count: 8, item: "gtceu:steel_ingot" }
+	]
+	title: "&62x Steel"
+}

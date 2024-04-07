@@ -1,0 +1,12 @@
+{
+	id: "711AB9B7D16C7413"
+	loot_size: 1
+	order_index: 21
+	rewards: [
+		{ item: "railcraft:white_iron_tank_gauge" }
+		{ item: "railcraft:white_iron_tank_valve" }
+		{ count: 5, item: "oreberriesreplanted:gold_oreberry" }
+		{ item: "lootbag:loot_bag_steam" }
+	]
+	title: "&6Multiblock Tanks... Railcraft Tanks"
+}

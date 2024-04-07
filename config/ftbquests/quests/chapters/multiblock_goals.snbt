@@ -298,6 +298,188 @@
 			x: 2.5d
 			y: 0.5d
 		}
+		{
+			dependencies: ["0C1E97E01BA4D547"]
+			description: ["Steel production is so slow. If you got enough bricks and clay, build a second BBF. Build it attached to the first one, so they can share a wall and you will save some bricks, clay and concrete."]
+			icon: { Count: 2b, id: "gtceu:steel_ingot" }
+			id: "07DEAC91808256EC"
+			rewards: [
+				{
+					count: 64
+					id: "5CDA7BB91B34340B"
+					item: "gtceu:coke_gem"
+					type: "item"
+				}
+				{
+					id: "31009EAA863AD183"
+					item: "lootbag:loot_bag_steam"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2EC298A85AC980C4"
+					table_id: 5238135079954179071L
+					type: "choice"
+				}
+				{
+					count: 25
+					id: "5B37C160F1F34854"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "27866F060EC879DA"
+					item: { Count: 64b, id: "railcraft:steel_ingot" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "0A04EC5B67CB6517"
+					item: { Count: 24b, id: "gtceu:firebricks" }
+					type: "item"
+				}
+				{
+					id: "608B4E5DE3D88FB0"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+			]
+			title: "&62x Steel"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["07DEAC91808256EC"]
+			description: [
+				"Not even two BBFs are fast enough...Can you figure out how to save the most bricks making 4?"
+				""
+				"&3PS: If you can't, this pack may not be for you."
+			]
+			icon: { Count: 4b, id: "gtceu:steel_ingot" }
+			id: "25EE2D0C4E0EBCB9"
+			rewards: [
+				{
+					count: 128
+					id: "2E00AEEC539CE3D7"
+					item: "gtceu:coke_gem"
+					type: "item"
+				}
+				{
+					id: "22F4D3C5872111AF"
+					item: "lootbag:loot_bag_steam"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "273EF2DF9691E037"
+					table_id: 5238135079954179071L
+					type: "choice"
+				}
+				{
+					count: 25
+					id: "7020C1032FB4297D"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 256L
+					id: "4BF109A61E169111"
+					item: { Count: 4b, id: "gtceu:steel_ingot" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "17A1785090727B2B"
+					item: { Count: 40b, id: "gtceu:firebricks" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "07F92B839889AADB"
+					item: { Count: 2b, id: "gtceu:primitive_blast_furnace" }
+					type: "item"
+				}
+			]
+			title: "&64x Steel"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["25EE2D0C4E0EBCB9"]
+			description: [
+				"Because we're nice developers, we decided to add a little bonus if you happen to compress charcoal. Use it in the bricked blast furnace, or in a boiler, it yields 10 times the burn time of a piece of charcoal. So one charcoal for free. This bonus only occurs on the first compression step. (But for fanciness, you should definitely get a quintuple one!)"
+				""
+				"&3Of course they're kinda useless unless you're using BBFs or boilers, though you can use them to make industrial diamonds."
+			]
+			id: "77FE6A10C590E3C5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "606888F80C34E42C"
+				table_id: 5091228629288626572L
+				type: "choice"
+			}]
+			tasks: [{
+				count: 64L
+				id: "02704AAE8ACD62DA"
+				item: { Count: 64b, id: "gtceu:charcoal_block" }
+				type: "item"
+			}]
+			title: "&6An Unexpected Bonus"
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"576 buckets of fluid, that should be enough to store all the creosote you have accumulated thus far. If that isn't enough you can make this tank bigger. The smallest tanks are 3x4x3 while the biggest are 9x8x9."
+				""
+				"Fluid will auto-output without any pumps if you place a valve on its bottom side at the center. The output rate is 1000 L/t so twice as fast as a GT HV Pump Cover. You can color the tank with Buildcraft paintbrushes and the GT spray can."
+				""
+				"If you still use Railcraft tanks in later tiers, you boost the output rate by using pumps."
+			]
+			id: "5858AAE5D73495F9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1F6B6A5B6DB45FE1"
+					table_id: 8150030674824033299L
+					type: "choice"
+				}
+				{
+					count: 25
+					id: "7ABB7F7D31A2669D"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 30L
+					id: "739C8FADBA57352B"
+					item: { Count: 30b, id: "railcraft:white_iron_tank_wall" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "16C2891407755F8E"
+					item: { Count: 2b, id: "railcraft:white_iron_tank_valve" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "130B2BC800B67A19"
+					item: { Count: 2b, id: "railcraft:white_iron_tank_gauge" }
+					type: "item"
+				}
+			]
+			title: "&6Multiblock Tanks... Railcraft Tanks"
+			x: 5.0d
+			y: -2.0d
+		}
 	]
 	title: "&6Multiblock Goals"
 }
