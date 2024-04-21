@@ -1,2 +1,0 @@
-#Sun Mar 31 11:20:00 CST 2024
-BorderFog=false

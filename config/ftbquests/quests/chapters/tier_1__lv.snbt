@@ -10,7 +10,7 @@
 		id: "7DD0AECA5E4261B8"
 		linked_quest: "48201648387DA5A1"
 		x: -5.5d
-		y: 7.5d
+		y: 9.0d
 	}]
 	quests: [
 		{
@@ -677,7 +677,7 @@
 			}]
 			title: "&5You're Gonna Hate This #2"
 			x: 0.0d
-			y: 6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1105,7 +1105,7 @@
 			}]
 			title: "&5Hello Baron, How's Your Black Gold Today?"
 			x: -4.0d
-			y: 6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["58ACE588F8C9CF65"]
@@ -1141,7 +1141,7 @@
 			}]
 			title: "&5Your Oil is Too Crude? Refine it!"
 			x: -8.0d
-			y: 6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["304FFAF7A568E3C1"]
@@ -1167,7 +1167,7 @@
 			}]
 			title: "&5Brewing, the Industrial Way"
 			x: -2.0d
-			y: 3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1215,7 +1215,92 @@
 			}]
 			title: "&5Lubricant"
 			x: -6.5d
-			y: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2F6F7C7A5863F920"]
+			description: [
+				"Maybe you're wondering why you need tetrahedrite or stibnite. Well, antimony can be centrifuged out of it which is very useful for batteries. Batteries store power, so you can have highs and lows in your power production while still outputting stable power."
+				""
+				"The veins can be found between Y level 80-120."
+			]
+			icon: "gtceu:netherrack_tetrahedrite_ore"
+			id: "4B511827F8B142F6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5AD9A0971835DD42"
+					table_id: 3783417272847755131L
+					type: "choice"
+				}
+				{
+					id: "0D1F43C23192D634"
+					item: "simplefarming:carrot_soup"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4DBEEABA0A31F265"
+					item: "kubejs:coin_exploration_10"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "5F68E6310491CB4D"
+					item: { Count: 64b, id: "gtceu:raw_tetrahedrite" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "153043A591C20CAE"
+					item: { Count: 16b, id: "gtceu:raw_stibnite" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "3CB8B2D990DA3B26"
+					item: { Count: 32b, id: "minecraft:raw_copper" }
+					type: "item"
+				}
+			]
+			title: "&5Tetrahedrite, Stibnite and Copper"
+			x: -11.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4B511827F8B142F6"]
+			description: ["The next step of making batteries is to collect some lead. Look at the lead quest in the novice thaumaturgy tab for more info."]
+			id: "627B8A5F928E7804"
+			rewards: [{
+				id: "1F1D405D502B38B4"
+				item: "farmersdelight:mixed_salad"
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "660DEBDF4BBED95D"
+				item: { Count: 32b, id: "gtceu:lead_ingot" }
+				type: "item"
+			}]
+			title: "&5A Lead About Lead That Leads to Lead"
+			x: -13.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4B511827F8B142F6"]
+			description: ["The most efficient way to get antimony for batteries is to run stibnite through a BBF or EBF, burning off the impurities (sulfur), and giving you more antimony. You can also centrifuge it if you want to keep the sulfur. You can also centrifuge tetrahedrite dust if you're desperate."]
+			id: "2817BFE9A154C165"
+			tasks: [{
+				count: 32L
+				id: "52C938D910EE727C"
+				item: { Count: 32b, id: "gtceu:antimony_ingot" }
+				type: "item"
+			}]
+			title: "&5Antimony"
+			x: -13.5d
+			y: 4.0d
 		}
 	]
 	title: "&5Tier 1 - LV"

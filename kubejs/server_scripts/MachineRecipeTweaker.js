@@ -34,6 +34,7 @@ ServerEvents.recipes(event => {
         S: "#forge:screws/stainless_steel",
         R: "#forge:rings/stainless_steel"
     })
+
     //Primitive Blast Furnace
     event.remove({ id: "gtceu:shaped/casing_primitive_bricks" })
     event.remove({ id: "gtceu:shaped/bronze_primitive_blast_furnace" })
@@ -42,6 +43,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:mixer/concrete_from_calcite" })
     event.remove({ id: "gtceu:mixer/concrete_from_marble" })
     event.remove({ id: "gtceu:mixer/concrete_from_clay" })
+    event.remove({ type: "gtceu:primitive_blast_furnace" })
     event.recipes.minecraft.crafting_shaped("gtceu:firebricks", ['BPB', 'BCB', 'BPB'], {
         B: "gtceu:firebrick",
         P: "#forge:dusts/gypsum",
@@ -73,6 +75,121 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler("gtceu:firebricks").EUt(16).duration(20).inputFluids(Fluid.of('gtceu:concrete', 4000)).itemInputs(["8x #forge:dusts/gypsum", "24x gtceu:firebrick"]).itemOutputs("4x gtceu:firebricks")
     event.recipes.gtceu.extractor("extract_white_concrete").EUt(120).duration(30).itemInputs("#forge:concrete").outputFluids(Fluid.of('gtceu:concrete', 144))
     event.recipes.gtceu.extractor("extract_concrete_dust").EUt(120).duration(30).itemInputs("#forge:dusts/concrete").outputFluids(Fluid.of('gtceu:concrete', 144))
+
+    let basic_recipe = (inputs,outputs,name,duration,amount) => {
+        event.recipes.gtceu.primitive_blast_furnace(name+'_1').duration(duration)
+            .itemInputs(InputItem.of(inputs))
+            .itemInputs(InputItem.of(["extratech:sugar_coke","extratech:cactus_coke"]).withCount(amount*4))
+            .itemOutputs(OutputItem.of(outputs))
+            .itemOutputs(OutputItem.of("gtceu:tiny_ash_dust").withCount(amount*4))
+        event.recipes.gtceu.primitive_blast_furnace(name+'_2').duration(duration+duration/2)
+            .itemInputs(InputItem.of(inputs))
+            .itemInputs(InputItem.of(["#forge:gems/coal","#forge:gems/charcoal","#forge:dusts/coal","#forge:dusts/charcoal"]).withCount(amount*2))
+            .itemOutputs(OutputItem.of(outputs))
+            .itemOutputs(OutputItem.of("gtceu:tiny_dark_ash_dust").withCount(amount*2))
+        event.recipes.gtceu.primitive_blast_furnace(name+'_3').duration(duration)
+            .itemInputs(InputItem.of(inputs))
+            .itemInputs(InputItem.of(["#forge:gems/coke","#forge:dusts/coke"]).withCount(amount))
+            .itemOutputs(OutputItem.of(outputs))
+            .itemOutputs(OutputItem.of("gtceu:tiny_ash_dust").withCount(amount))
+        event.recipes.gtceu.primitive_blast_furnace(name+'_block_1').duration((duration+duration/2)*9)
+            .itemInputs(InputItem.of(inputs).withCount(10))
+            .itemInputs(InputItem.of(["#forge:storage_blocks/coal","#forge:storage_blocks/charcoal"]).withCount(amount*2))
+            .itemOutputs(OutputItem.of(outputs).withCount(10))
+            .itemOutputs(OutputItem.of("gtceu:dark_ash_dust").withCount(amount*2))
+        event.recipes.gtceu.primitive_blast_furnace(name+'_block_2').duration(duration*9)
+            .itemInputs(InputItem.of(inputs).withCount(10))
+            .itemInputs(InputItem.of(["#forge:storage_blocks/coke"]).withCount(amount))
+            .itemOutputs(OutputItem.of(outputs).withCount(10))
+            .itemOutputs(OutputItem.of("gtceu:ash_dust").withCount(amount))
+    }
+    let bonus_recipe = (inputs,outputs,name) => {
+        event.recipes.gtceu.primitive_blast_furnace(name+'_1').duration(1600)
+            .itemInputs(InputItem.of(inputs).withCount(2))
+            .itemInputs(InputItem.of(["extratech:sugar_coke","extratech:cactus_coke"]).withCount(4))
+            .itemOutputs(OutputItem.of(outputs).withCount(3))
+            .itemOutputs("4x gtceu:tiny_ash_dust")
+        event.recipes.gtceu.primitive_blast_furnace(name+'_2').duration(2400)
+            .itemInputs(InputItem.of(inputs.withCount(2)))
+            .itemInputs(InputItem.of(["#forge:gems/coal","#forge:gems/charcoal","#forge:dusts/coal","#forge:dusts/charcoal"]).withCount(2))
+            .itemOutputs(OutputItem.of(outputs).withCount(3))
+            .itemOutputs("4x gtceu:tiny_dark_ash_dust")
+        event.recipes.gtceu.primitive_blast_furnace(name+'_3').duration(1600)
+            .itemInputs(InputItem.of(inputs).withCount(2))
+            .itemInputs(InputItem.of(["#forge:gems/coke","#forge:dusts/coke"]))
+            .itemOutputs(OutputItem.of(outputs).withCount(3))
+            .itemOutputs("4x gtceu:tiny_ash_dust")
+        event.recipes.gtceu.primitive_blast_furnace(name+'_block_1').duration(21600)
+            .itemInputs(InputItem.of(inputs).withCount(20))
+            .itemInputs(InputItem.of(["#forge:storage_blocks/coal","#forge:storage_blocks/charcoal"]).withCount(2))
+            .itemOutputs(OutputItem.of(outputs).withCount(30))
+            .itemOutputs("4x gtceu:dark_ash_dust")
+        event.recipes.gtceu.primitive_blast_furnace(name+'_block_2').duration(14400)
+            .itemInputs(InputItem.of(inputs).withCount(20))
+            .itemInputs(InputItem.of(["#forge:storage_blocks/coke"]))
+            .itemOutputs(OutputItem.of(outputs).withCount(30))
+            .itemOutputs("4x gtceu:ash_dust")
+
+        event.recipes.gtceu.electric_blast_furnace(name).blastFurnaceTemp(1200).duration(240).EUt(120)
+            .itemInputs(InputItem.of(inputs.withCount(2)))
+            .itemInputs("#forge:dusts/carbon")
+            .itemOutputs(OutputItem.of(outputs).withCount(3))
+            .itemOutputs("2x gtceu:tiny_ash_dust")
+            .outputFluids(Fluid.of("gtceu:carbon_dioxide",1000))
+    }
+
+    basic_recipe(
+        Ingredient.of(["#forge:dusts/iron","#forge:ingots/iron"]),
+        Ingredient.of("gtceu:steel_ingot"),
+        "iron_to_steel",
+        4800,
+        2
+    )
+    basic_recipe(
+        Ingredient.of(["#forge:dusts/wrought_iron","#forge:ingots/wrought_iron"]),
+        Ingredient.of("gtceu:steel_ingot"),
+        "wrought_iron_to_steel",
+        3600,
+        2
+    )
+    basic_recipe(
+        Ingredient.of("#forge:dusts/steel"),
+        Ingredient.of("gtceu:steel_ingot"),
+        "steel_dust_to_steel",
+        4800,
+        1
+    )
+
+    bonus_recipe(
+        Ingredient.of(["#forge:dusts/chalcopyrite","#forge:dusts/tetrahedrite","#forge:dusts/bornite","#forge:dusts/chalcocite","#forge:dusts/malachite"]),
+        Ingredient.of("minecraft:copper_ingot"),
+        "bonus_copper")
+    bonus_recipe(
+        Ingredient.of(["#forge:dusts/garnierite","#forge:dusts/pentlandite"]),
+        Ingredient.of("gtceu:nickel_ingot"),
+        "bonus_nickel")
+    bonus_recipe(
+        Ingredient.of(["#forge:dusts/cassiterite_sand","#forge:dusts/cassiterite"]),
+        Ingredient.of("gtceu:tin_ingot"),
+        "bonus_tin")
+    bonus_recipe(
+        Ingredient.of(["#forge:dusts/hematite","#forge:dusts/goethite","#forge:dusts/magnetite","#forge:dusts/pyrite","#forge:dusts/yellow_limonite","#forge:dusts/granitic_mineral_sand","#forge:dusts/basaltic_mineral_sand"]),
+        Ingredient.of("minecraft:iron_ingot"),
+        "bonus_iron")
+    bonus_recipe(
+        Ingredient.of("#forge:dusts/galena"),
+        Ingredient.of("gtceu:lead_ingot"),
+        "bonus_lead")
+    bonus_recipe(
+        Ingredient.of("#forge:dusts/sphalerite"),
+        Ingredient.of("gtceu:zinc_ingot"),
+        "bonus_zinc")
+    bonus_recipe(
+        Ingredient.of("#forge:dusts/stibnite"),
+        Ingredient.of("gtceu:antimony_ingot"),
+        "bonus_antimony")
+    
+
     //RC water collector(water tank)
     event.remove({ id: "railcraft:water_tank_siding" })
     event.recipes.minecraft.crafting_shaped("railcraft:water_tank_siding", ['PPP', 'RSR', 'PPP'], {

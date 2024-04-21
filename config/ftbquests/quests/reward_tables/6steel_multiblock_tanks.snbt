@@ -1,0 +1,11 @@
+{
+	id: "28F3B44AAC4AA511"
+	loot_size: 1
+	order_index: 23
+	rewards: [
+		{ item: "railcraft:white_steel_tank_valve" }
+		{ item: "railcraft:white_steel_tank_gauge" }
+		{ item: "lootbag:loot_bag_lv" }
+	]
+	title: "&6Steel Multiblock Tanks"
+}

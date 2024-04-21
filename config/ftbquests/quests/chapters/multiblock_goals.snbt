@@ -6,7 +6,26 @@
 	icon: "gtceu:electric_blast_furnace"
 	id: "74E0D5EC816BDCE8"
 	order_index: 0
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "3A27B2E3223BE731"
+			linked_quest: "17E4B74FAA1C8192"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			id: "3669154E02C1CFC1"
+			linked_quest: "4EBED4D636B069BC"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			id: "2CD1A1915CC1429E"
+			linked_quest: "2F6F7C7A5863F920"
+			x: 0.0d
+			y: 2.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["4EBED4D636B069BC"]
@@ -31,20 +50,22 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "1C27D3AA49F9F01D"
-					type: "random"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "14E2B41EBF191EA2"
-					type: "random"
-				}
-				{
 					count: 50
 					id: "62BA876F8BB1AE0F"
 					item: "kubejs:coin_technique_1"
 					type: "item"
+				}
+				{
+					count: 2
+					id: "78038FDACC37056D"
+					item: "lootbag:loot_bag_steam"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "519C28AD442FEF85"
+					table_id: 5350838433318714129L
+					type: "choice"
 				}
 			]
 			shape: "square"
@@ -249,7 +270,7 @@
 			]
 			title: "&6The Water Dilemma"
 			x: 2.5d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["32E8FCE0DA844F6A"]
@@ -434,6 +455,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["17E4B74FAA1C8192"]
 			description: [
 				"576 buckets of fluid, that should be enough to store all the creosote you have accumulated thus far. If that isn't enough you can make this tank bigger. The smallest tanks are 3x4x3 while the biggest are 9x8x9."
 				""
@@ -441,6 +463,7 @@
 				""
 				"If you still use Railcraft tanks in later tiers, you boost the output rate by using pumps."
 			]
+			icon: "railcraft:white_iron_tank_wall"
 			id: "5858AAE5D73495F9"
 			rewards: [
 				{
@@ -477,8 +500,305 @@
 				}
 			]
 			title: "&6Multiblock Tanks... Railcraft Tanks"
-			x: 5.0d
-			y: -2.0d
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5858AAE5D73495F9"]
+			description: ["Do you want to have tanks that can hold double the amount of the iron ones? Go ahead and make a steel tank. Everything else is the same."]
+			icon: "railcraft:white_steel_tank_wall"
+			id: "3B2ED3E5119409E7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3AF281665A3A3527"
+					table_id: 2950900413668959505L
+					type: "choice"
+				}
+				{
+					count: 30
+					id: "614C0063FFB271D3"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 30L
+					id: "0210D5785F7D1739"
+					item: { Count: 30b, id: "railcraft:white_steel_tank_wall" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0B86501ADAFD3539"
+					item: { Count: 2b, id: "railcraft:white_steel_tank_valve" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1A08F2A092724721"
+					item: { Count: 2b, id: "railcraft:white_steel_tank_gauge" }
+					type: "item"
+				}
+			]
+			title: "&6Steel Multiblock Tanks"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2F6F7C7A5863F920"]
+			description: [
+				"In order to get aluminium ingots, you need an Electric Blast Furnace. It's another very important step towards victory, so let's get started."
+				""
+				"Getting the Mica for the heating coils might be a little tricky, but you can use a substitute for the first tier of coils. "
+				"You need 2 LV hatches with 4A of 32V total, or 3 LV hatches with MOOOORE power if the multiblock is not fully repaired. "
+				""
+				"A few recipes produce CO2/SO2 as a fluid. This fluid can be collected by placing a fluid output hatch on the the EBF. You could also enable fluid voiding in the EBF controller block GUI. For recipes with such a C02/S02 output you must do one or the other or the EBF will not start."
+				""
+				"Bart's Platinum Series recipes output fluids on the BOTTOM and are NOT affected by the mufffler hatch tier, so if you want to do Platinum Stuff later, remember that."
+				""
+				"Moron always says - Make Muffler Moint Mup. Or point up, anyways. Before the launch, don't forget to fix maintenance issues and put a programmed circuit if necessary."
+				""
+				"If you want a really fancy EBF, you can add more input fluid hatches and store different fluids in each one."
+				""
+				"The EBF also has a heat adjustment of 100K for each power tier above or below MV. You can only make LV energy hatches right now, but installing two LV energy hatches will overclock the EBF to MV power, eliminating the 100K penalty and setting the initial heat to 1801K."
+				""
+				"As you upgrade your EBF over the course of the game, this heat adjustment will increase. Two MV energy hatches (overclocking to HV) will add +100K, two HV energy hatches (overclocking to EV) will give +200K, and so on. Coils only set the base value. "
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "337C96B85D85BB82"
+			rewards: [
+				{
+					count: 3
+					id: "2C7DF6AD2C52AA3E"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					id: "4CC4BE4D70AFD020"
+					item: "gtceu:duct_tape"
+					type: "item"
+				}
+				{
+					count: 75
+					id: "0F26B0D31BFDE716"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [
+				{
+					count: 11L
+					id: "62DDC8BA21A755E8"
+					item: { Count: 11b, id: "gtceu:heatproof_machine_casing" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "73AB24C113D73DD0"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					id: "5A37406742D259FA"
+					item: "gtceu:lv_input_bus"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "542DC79C9B0AFDB1"
+					item: "gtceu:lv_output_bus"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "13AFDFBE7E6109B4"
+					item: "gtceu:lv_input_hatch"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "22403B71B5DD3012"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "67C067A0BDC9B20A"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1EEDE378C0E8E7F7"
+					item: { Count: 2b, id: "gtceu:lv_energy_input_hatch" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 128L
+					id: "4996DD09A6D58949"
+					item: { Count: 12b, id: "gtceu:cupronickel_single_wire" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "5788D8A4B4300F4C"
+					item: { Count: 16b, id: "gtceu:cupronickel_coil_block" }
+					type: "item"
+				}
+			]
+			title: "&6EBF-Time"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["337C96B85D85BB82"]
+			description: ["When you get polyethylene you can make your own duct tape in case you have to move your multiblock machines around. Duct tape will fix all maintenance problems in any multiblock machine."]
+			icon: "gtceu:duct_tape"
+			id: "076124653A358791"
+			rewards: [
+				{
+					count: 3
+					id: "38184CD8DFC9ACE8"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 40
+					id: "11D54308B5A07823"
+					item: "kubejs:coin_technique_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3F6E9CBC576C75B0"
+					item: { Count: 9b, id: "gtceu:carbon_fiber_mesh" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2502CC1F80FB9BE0"
+					item: { Count: 2b, id: "gtceu:polyethylene_foil" }
+					type: "item"
+				}
+				{
+					id: "66D7C334E317FDA0"
+					item: "gtceu:duct_tape"
+					type: "item"
+				}
+			]
+			title: "&6Less Power Loss"
+			x: -2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["337C96B85D85BB82"]
+			description: ["Sure, those coke ovens are nice, but they aren't even remotely fast enough to keep up with a large steam boiler. Luckily, there is an upgrade available! The creosote oil will not be produced, but the process will speed up dramatically. Who needs that nasty yellowish flammable stuff anyway..."]
+			icon: "railcraft:blast_furnace_bricks"
+			id: "475759847434D32C"
+			rewards: [
+				{
+					count: 10
+					id: "5E08C60B66D7473A"
+					item: "gtceu:charcoal_block"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "746A3731AC97B2AA"
+					item: "minecraft:coal_block"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "05D35170C6335439"
+					item: "gtceu:coke_block"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "64E55D04F261B1A7"
+					item: "kubejs:coin_technique_10"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 68L
+					id: "037C3A2DBD6A9019"
+					item: { Count: 64b, id: "minecraft:nether_brick" }
+					type: "item"
+				}
+				{
+					count: 68L
+					id: "330C969EA53E08C4"
+					item: "kubejs:hot_netherrack_brick"
+					type: "item"
+				}
+				{
+					count: 68L
+					id: "50F2006C5042380D"
+					item: "gtceu:coke_oven_brick"
+					type: "item"
+				}
+				{
+					count: 68L
+					id: "4FA6C88265D920A9"
+					item: "kubejs:infernal_brick"
+					type: "item"
+				}
+				{
+					count: 136L
+					id: "15EA447B3EE5F71E"
+					item: "kubejs:advanced_coke_oven_brick"
+					type: "item"
+				}
+				{
+					count: 34L
+					id: "0A67D43326319412"
+					item: { Count: 34b, id: "railcraft:blast_furnace_bricks" }
+					type: "item"
+				}
+			]
+			title: "&6High-Speed Charcoal"
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["337C96B85D85BB82"]
+			description: [
+				"This oven is the best way to get charcoal and creosote (x50 faster than Railcraft's coke oven) and other byproducts. You will need tons of bronze, iron and steel to build it, but it's worth it. Finally, it will be possible to dismantle the charcoal pit."
+				""
+				"With Cupronickel coils the oven is a bit slower. Each coil tier speeds up the charcoal production."
+			]
+			id: "59D81232F8D8D6B0"
+			rewards: [
+				{
+					count: 3
+					id: "46709D71ECA79CF9"
+					item: "lootbag:loot_bag_lv"
+					type: "item"
+				}
+				{
+					count: 300
+					id: "2B93EB669776E790"
+					item: "gtceu:charcoal_block"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1D49E227725FD901"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			title: "&6Still Not Enough Charcoal?"
+			x: 2.5d
+			y: 6.0d
 		}
 	]
 	title: "&6Multiblock Goals"

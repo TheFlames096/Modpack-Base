@@ -2158,26 +2158,6 @@
 			y: 14.0d
 		}
 		{
-			description: [
-				"After you made your first steel, you are able to craft a small backpack. It has 36 slots, which is a bit more than a small chest. Later you can make it even larger. "
-				""
-				"You can have at most four of these backpacks in your inventory."
-				""
-				"You can put one on your back and set it to automatically pick up stuff. In you controls, check that the command \"Open Backpacks\" has a key and doesn't have conflicts. The key only works after the backpack is added to the back slot, which can be done by using Shift+<Open Backpacks Key>."
-				""
-				"You can rename your backpack by pressing Shift+RMB when holding it in your hand."
-			]
-			id: "41D40D30B5B6DEA2"
-			tasks: [{
-				id: "58D9E6D0619F1E9C"
-				item: "usefulbackpacks:backpack_small"
-				type: "item"
-			}]
-			title: "&3How Can I Carry All These Items?"
-			x: 8.0d
-			y: 9.5d
-		}
-		{
 			dependencies: ["348BA731467B27F0"]
 			description: [
 				"This is the first GT-type tank. It stores 32 buckets or 32,000L, and can be used to I/O cells. The ULV Tank from GT++ needs steel plates, iron plates, tin plates, a clay pipe, and a water bucket."

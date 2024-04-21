@@ -1,0 +1,11 @@
+{
+	id: "4A41FF3484783B11"
+	loot_size: 1
+	order_index: 22
+	rewards: [
+		{ count: 10, item: "oreberriesreplanted:essence_berry" }
+		{ count: 10, item: "oreberriesreplanted:iron_oreberry" }
+		{ count: 10, item: "oreberriesreplanted:gold_oreberry" }
+	]
+	title: "&6Time to Get Some Steel"
+}

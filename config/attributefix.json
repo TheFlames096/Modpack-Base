@@ -121,6 +121,17 @@
         "value": 1024
       }
     },
+    "forge:step_height": {
+      "enabled": false,
+      "min": {
+        "default": -512,
+        "value": -512
+      },
+      "max": {
+        "default": 512,
+        "value": 512
+      }
+    },
     "minecraft:generic.armor": {
       "enabled": true,
       "min": {

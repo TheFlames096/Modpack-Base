@@ -97,6 +97,10 @@
   "fruitfulfun": {
     "inspector": true
   },
+  "monazite": {
+    "recipe_info_item_output": true,
+    "recipe_info_fluid_output": true
+  },
   "ae2": {
     "part_icon": true,
     "charger": true,
